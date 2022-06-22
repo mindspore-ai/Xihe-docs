@@ -1,0 +1,60 @@
+<script setup lang="ts">
+import { watch , ref} from 'vue';
+import { useData, useRouter, useRoute } from 'vitepress';
+
+import { useCommonStore } from '@/stores/common';
+
+import SideBar from './SideBar.vue';
+import SideBarMenu from './SideBarMenu.vue';
+
+const { theme,lang } = useData();
+
+const common = useCommonStore();
+const router = useRouter();
+const route = useRoute();
+
+const path = route.path;
+console.log(lang.value);
+
+const routeName = path.split('/')[2];
+const sidebarInfo=theme.value.sidebar
+
+const activeLinkId = ref(routeName);
+const goLink=ref('')
+const handleItemClick = (name: string,link:string,index:number,itemIndex:number) => {
+  activeLinkId.value = name;
+  goLink.value=link
+  common.index=index
+  common.itemIndex=itemIndex
+};
+
+watch(
+  () => {
+    return activeLinkId.value;
+  },
+  () => {
+    router.go("/"+lang.value+"/"+goLink.value+"/");
+  }
+);
+</script>
+
+<template>
+  <SideBar>
+    <side-bar-menu
+      v-for="(item,index) in sidebarInfo"
+      :info="item"
+      :index="index"
+      :active-id="activeLinkId"
+      @item-click="handleItemClick"
+    ></side-bar-menu>
+  </SideBar>
+</template>
+
+<style lang="scss" scoped>
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-left: 260px;
+}
+</style>
