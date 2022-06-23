@@ -21,6 +21,6 @@ node_modules
 dist
 .pnpm-debug.log
 
-app/.vitepress/.cache
-app/.vitepress/.temp
-app/.vitepress/dist
+docs/.vitepress/.cache
+docs/.vitepress/.temp
+docs/.vitepress/dist
