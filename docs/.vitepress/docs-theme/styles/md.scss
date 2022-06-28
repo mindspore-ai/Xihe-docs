@@ -1,0 +1,142 @@
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  word-wrap: break-word;
+  margin: 40px auto 64px !important;
+  padding: 40px;
+  background: #ffffff;
+  max-width: 1040px;
+  width: 100%;
+  &.other {
+    background: none;
+    .markdown-body-title {
+      text-align: center;
+      padding-bottom: 40px;
+    }
+  }
+
+  .page-title {
+    margin-top: 0;
+  }
+  div[class*="language-"] {
+    margin-bottom: 16px;
+    border-radius: 0;
+    pre {
+      padding: 1em;
+      margin: 0.5em 0;
+      overflow: auto;
+    }
+  }
+  h1 {
+    line-height: 48px;
+    font-size: 36px;
+    margin: 32px 0 40px 0;
+
+  }
+  h2 {
+    line-height: 24px;
+    font-size: 24px;
+    margin: 40px 0 20px;
+
+  }
+  h3 {
+    line-height: 20px;
+    font-size: 18px;
+    margin: 40px 0 12px;
+    font-weight: 500;
+
+
+  }
+  h4 {
+    line-height: 18px;
+    font-size: 18px;
+    margin: 30px 0 20px;
+  }
+  h5 {
+    line-height: 16px;
+    font-size: 16px;
+    margin: 30px 0 20px;
+  }
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 500;
+  }
+  p,
+  ul li,
+  ol li {
+    font-size: 14px;
+    line-height: 24px;
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  p {
+    margin-bottom: 8px;
+  }
+  a[href^="#"] {
+    display: none;
+  }
+  .icon.outbound {
+    display: none;
+  }
+  table {
+    width: 100%;
+    font-size: 14px;
+    table-layout: fixed;
+    word-break: break-word;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 16px 0;
+    tr {
+      th,
+      td {
+        padding: 12px 16px;
+      }
+    }
+  }
+  ul,
+  ol {
+    list-style: initial;
+    padding-left: 30px;
+  }
+  ol {
+    list-style: decimal;
+  }
+  strong {
+    font-weight: bold;
+  }
+  img {
+    height: auto;
+    max-width: 60%;
+    margin: 16px 0;
+    background-color: #ffffff;
+  }
+  p {
+    img {
+      text-align: center;
+      display: inline-block;
+      vertical-align: middle;
+
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  hr {
+    margin: 40px 0;
+  }
+  blockquote {
+    padding: 10px 15px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    margin: 24px 0;
+  }
+  a {
+    font-weight: 500;
+    color: var(--theme-color);
+  }
+}

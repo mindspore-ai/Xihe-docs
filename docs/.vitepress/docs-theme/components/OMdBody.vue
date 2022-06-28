@@ -15,10 +15,6 @@ import OMdHead from './OMdHead.vue';
 </template>
 
 <style lang="scss">
-.markdown-body{
-  width:1040px;
-  width: 100%;
-}
 .layout {
   min-height: calc(100vh - 80px - 240px);
   @media (max-width: 1100px) {

@@ -7,35 +7,7 @@ export default defineConfig({
   publicDir: path.resolve(__dirname, "./.vitepress/public"),
   resolve: {
     alias: {
-      "@/": `${path.resolve(__dirname, "./.vitepress/src")}/`,
+      "@/": `${path.resolve(__dirname, "./.vitepress/docs-theme")}/`,
     },
   },
-  // plugins: [
-  //   AutoImport({
-  //     resolvers: [ElementPlusResolver()],
-  //   }),
-  //   Components({
-  //     resolvers: [ElementPlusResolver()],
-  //   }),
-  //   Icons({
-  //     compiler: 'vue3',
-  //     customCollections: {
-  //       app: FileSystemIconLoader(
-  //         path.resolve(__dirname, './.vitepress/src/assets/svg-icons')
-  //       ),
-  //     },
-  //   }),
-  // ],
-  //server: {
-  //  https: true,
-  //   proxy: {
-  //     '/zh/query': {
-  //       target: 'https://openlookengindextool.test.osinfra.cn/',
-  //       changeOrigin: true,
-  //       // rewrite: (path) => {
-  //       //   return path.replace(/\/(zh|en)/, '');
-  //       // },
-  //     },
-  //   },
-  //},
 });

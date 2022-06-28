@@ -13,7 +13,7 @@
     "lib": ["esnext", "dom"],
     "baseUrl": "./",
     "paths": {
-      "@/*": ["./.vitepress/src/*"]
+      "@/*": [".vitepress/docs-theme/*"]
     },
   },
   "include": [
