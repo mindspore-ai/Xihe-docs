@@ -17,8 +17,5 @@ import OMdHead from './OMdHead.vue';
 <style lang="scss">
 .layout {
   min-height: calc(100vh - 80px - 240px);
-  @media (max-width: 1100px) {
-    min-height: calc(100vh - 48px - 200px);
-  }
 }
 </style>
