@@ -25,22 +25,5 @@ export default {
         },
       ],
     },
-    {
-      text: "test1",
-      link: "/zh/test1/",
-    },
-    {
-      text: "we",
-      children: [
-        {
-          text: "test2",
-          link: "/zh/we/test2/",
-        },
-        {
-          text: "test3",
-          link: "/zh/we/test3/",
-        },
-      ],
-    },
   ],
 };

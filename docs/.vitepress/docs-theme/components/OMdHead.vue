@@ -12,18 +12,20 @@ const breadText2 = ref("");
 const isShow = computed(() => {
   return breadText2.value !== "";
 });
-watch(
-  router.route,
-  () => {
-    breadText1.value = data[index.value].text;
-    if (data[index.value].children) {
-      breadText2.value = data[index.value].children[itemIndex.value].text;
-    } else {
-      breadText2.value = "";
-    }
-  },
-  { immediate: true }
-);
+onMounted(() => {
+  watch(
+    router.route,
+    () => {
+      breadText1.value = data[index.value].text;
+      if (data[index.value].children) {
+        breadText2.value = data[index.value].children[itemIndex.value].text;
+      } else {
+        breadText2.value = "";
+      }
+    },
+    { immediate: true }
+  );
+});
 </script>
 
 <template>
@@ -42,19 +44,11 @@ watch(
   border-bottom: 1px solid var(--theme-cross-line);
   .bread-crumbs {
     .crumbs-one {
-      color: rgba(85, 85, 85, 1);
+      color: darkgray;
     }
     .lgt {
       margin: 0 5px;
-    }
-  }
-}
-@media (max-width: 1100px) {
-  .markdown-body-title {
-    margin-bottom: 24px;
-    .page-title {
-      font-size: 16px;
-      line-height: 24px;
+      color: darkgray;
     }
   }
 }

@@ -3,10 +3,11 @@ import { onMounted } from "vue";
 import { useRouter, useData } from "vitepress";
 
 import OMdBody from "../docs-theme/components/OMdBody.vue";
-import SideBar from "../docs-theme/components/AppDoc.vue";
+import AppSideBar from "../docs-theme/components/AppSideBar.vue";
 import ORight from "../docs-theme/components/ORight.vue";
 import AppHeader from "@/components/AppHeader.vue";
 import AppFooter from "@/components/AppFooter.vue";
+
 const route = useRouter();
 const data = useData().site.value.themeConfig.sidebar;
 
@@ -26,7 +27,7 @@ onMounted(() => {
     <AppHeader />
   </header>
   <div class="content">
-    <SideBar />
+    <AppSideBar />
     <main>
       <OMdBody />
     </main>
@@ -41,7 +42,6 @@ onMounted(() => {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f0f2f5;
   min-width: 1280px;
 }
 .app-header {
@@ -80,9 +80,9 @@ onMounted(() => {
   position: relative;
 }
 main {
-  display: flex;
   grid-area: b;
   justify-content: center;
   margin: 0 auto;
+  width: 100%;
 }
 </style>

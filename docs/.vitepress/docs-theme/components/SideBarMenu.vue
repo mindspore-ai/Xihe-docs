@@ -116,12 +116,13 @@ onMounted(() => {
 
 <style lang="scss" scoped>
 .sidebar-menu {
+  border-bottom: 1px solid #e5e5e5;
   .menu-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    padding: 0 12px 0 20px;
+    padding: 0 20px;
     cursor: pointer;
 
     &-icon {
@@ -160,12 +161,10 @@ onMounted(() => {
       }
 
       &:hover {
-        background-color: var(--bg-color);
         color: var(--theme-color);
       }
 
       &.active {
-        background-color: var(--bg-color);
         color: var(--theme-color);
       }
     }

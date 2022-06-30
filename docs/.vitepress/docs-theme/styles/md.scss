@@ -5,7 +5,6 @@
   margin: 40px auto 64px !important;
   padding: 40px;
   background: #ffffff;
-  max-width: 1040px;
   width: 100%;
   &.other {
     background: none;
@@ -31,21 +30,17 @@
     line-height: 48px;
     font-size: 36px;
     margin: 32px 0 40px 0;
-
   }
   h2 {
     line-height: 24px;
     font-size: 24px;
     margin: 40px 0 20px;
-
   }
   h3 {
     line-height: 20px;
     font-size: 18px;
     margin: 40px 0 12px;
     font-weight: 500;
-
-
   }
   h4 {
     line-height: 18px;
@@ -111,7 +106,7 @@
   }
   img {
     height: auto;
-    max-width: 60%;
+    max-width: 100%;
     margin: 16px 0;
     background-color: #ffffff;
   }

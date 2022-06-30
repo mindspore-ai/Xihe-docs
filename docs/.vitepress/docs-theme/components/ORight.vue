@@ -162,7 +162,14 @@ function handleClick(status: number) {
     }
   }
   .no-click{
-    cursor: auto;
+    cursor: not-allowed;
+    color: darkgray;
+     &::before {
+      border-right: 5px solid darkgray !important;
+     }
+     &::after {
+      border-left: 5px solid darkgray !important;
+     }
   }
   @media screen  and (max-width: 1279px){
     position: absolute;
