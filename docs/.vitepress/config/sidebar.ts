@@ -14,11 +14,11 @@ export default {
         {
           text: "用户操作文档",
           link: "/zh/basics/user_ui/",
-        }，
+        },
         {
           text: "模型操作文档",
           link: "/zh/basics/model_ui/",
-        }，
+        },
         {
           text: "数据集操作文档",
           link: "/zh/basics/dataset_ui/",
@@ -44,11 +44,11 @@ export default {
           text: "版本说明",
           link: "/zh/appendix/changelog/",
         },
-          {
+        {
           text: "反馈方式",
           link: "/zh/appendix/feedback/",
         },
-          {
+        {
           text: "使用协议",
           link: "/zh/appendix/license/",
         },
