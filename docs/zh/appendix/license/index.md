@@ -25,41 +25,15 @@
 
 2） [《隐私声明 》](https://consumer.huawei.com/cn/privacy/privacy-policy/)；
 
-## 注册羲和AI账户
+## 羲和AI账户
 
-您需要拥有一个```羲和AI```帐户并登录您的```羲和AI```账户才能使用```羲和AI```的服务。 未经我们事先书面许可，您不得将您的帐户转让给任何其他人。
+您需要拥有一个```羲和AI```帐户并登录您的```羲和AI```账户才能使用```羲和AI```的服务。 未经我们事先书面许可，您不得将您的帐户转让给任何其他人。本着公平的精神，您不能注册多个有效的```羲和AI```用户ID。
 
 如果您代表某个组织或实体同意这些条款，则您声明并保证您有权代表该组织或实体同意这些条款并将其约束于这些条款, 但您仍然需要为您的组织中的每个用户独立注册```羲和AI```账号。即使您代表组织或实体，也不允许多个人共用同一个```羲和AI```账号。
 
 您仅将```羲和AI```用于您自己的个人用途或其他非商业用途，而不能代表或为了任何第三方的利益，并且只能以符合适用于您的所有法律的方式使用。如果适用法律禁止您使用```羲和AI```服务，则您无权使用```羲和AI```。如果您以违反法律的方式使用```羲和AI```，我们概不负责。
 
 您将保持所有注册信息的准确性和最新性。您不能与任何人共享您的帐户或密码，您必须保护帐户和密码的安全。您对与您的帐户相关的任何活动负责。
-
-进入```羲和AI```平台首页点击小人物标记即可跳转登录界面
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1048.png)
-
-我们可以使用手机验证码、邮箱验证码、Github、Gitte、微信等登录方式。
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1041.png)
-
-登录成功之后，即可到个人主页设置个人资料。
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1043.png)
-
-按照步骤就可以成功注册了。
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1047.png)
-
-更换头像的页面
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1046.png)
-
-绑定邮箱
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1044.png)绑定手机
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1045.png)
 
 ## 服务使用规范
 
