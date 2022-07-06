@@ -68,6 +68,7 @@ onMounted(() => {
   min-width: 1280px;
   background-color: #18191d;
   z-index: 10;
+  margin-left: 300px;
 }
 .content {
   display: grid;
