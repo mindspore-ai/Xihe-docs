@@ -1,68 +1,55 @@
-# 项目
+# 模型
 
-更新时间：2022-06-30
+更新时间：2022-07-13
 
 **目录**
 
-1. [页面概览]()
-2. [查看项目]()
-3. [Fork项目]()
-4. [创建项目]()
-5. [在线训练和推理可视化]()
-6. [添加项目标签]()
+1. [页面概览](#页面概览)
+2. [查看公开模型](#查看公开模型)
+3. [下载模型](#下载模型)
+4. [新建模型](#新建模型)
+5. [对模型添加标签](#对模型添加标签)
 
-## 页面概览
+## <a id="页面概览">页面概览</a>
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1065.png)
+模型：覆盖全领域主流模型，可体验MindSpore大模型推理API，用户既可下载公开的预训练模型，也可以上传自行训练的模型文件。
 
-本页面即项目大厅页，左侧是标签，有应用分类，推理可视化SDK，训练SDK，协议等。每个项目都可以根据对应的特点设置相应的标签。点击模型卡片，如果您觉得这个项目不错，可以Fork到自己的仓库进行在线训练和推理可视化。
+下图页面即模型大厅页，左侧是标签，有应用分类，处理器，文件格式，框架，训练数据集，协议等。每个模型都可以根据对应的特点设置相应的标签，如果您觉得这个模型不错，也可以进入模型卡片手动点击小爱心对模型进行收藏。底部的模型页栏，可以进行翻页操作。
 
-## 查看项目
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG1070.png)
 
-如果想快速得到想用的项目，可以进入界面可以看到项目卡片，您可以搜索您需要的项目。
+## <a id="查看公开模型">查看公开模型</a>
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1031.png)
+如果想快速得到想用的模型，进入界面点击搜索框，您可以搜索您需要的模型。
 
-### Fork项目
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG994.png)
 
-点击项目卡片，进入项目界面->点击Fork->填写描述。
+点击进入模型卡片后您可以看到模型的描述和模型的架构，并且我们还附上了链接，方便您更深入的了解模型。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1027.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG1071.png)
 
-填写相应的描述，点击确定，完成Fork。
+## <a id="下载模型">下载模型</a>
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1028.png)
+点击模型卡片，进入模型界面->点击文件->下载ckpt文件。
 
-### 新建项目
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG987.png)
 
-点击项目大厅页面右上方项目卡片新建项目。
+## <a id="新建模型">新建模型</a>
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1035.png)
+点击模型大厅页面右上方模型卡片新建模型。
 
-根据你的项目情况填写，点击提交，就创建成功啦！
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG984.png)
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1060.png)
+根据你的模型情况填写，点击确定，就创建成功啦！
 
-在主页也可以直接创建项目：
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG988.png)
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1017.png)
+在主页也可以直接创建模型：
 
-## 在线训练和推理可视化
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG995.png)
 
-启动在线推理实例
+## <a id="对模型添加标签">对模型添加标签</a>
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1062.png)
+可以根据您的模型添加对应的标签。
 
-创建训练实例
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1063.png)
-
-新建或上传预训练文件
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1064.png)
-
-## 对模型添加标签
-
-可以根据您的项目添加对应的标签。
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1034.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG997.png)

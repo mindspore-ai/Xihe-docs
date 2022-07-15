@@ -1,12 +1,14 @@
 # 新手指南
 
+更新时间：2022-07-13
+
 **目录**
 
-1. [平台说明](https://gitee.com/xinwenh/xhdocs/blob/master/docs/zh_cn/introduction.md)
-2. [快速入门](https://gitee.com/xinwenh/xhdocs/blob/master/docs/zh_cn/introduction.md)
-3. [平台内容](https://gitee.com/xinwenh/xhdocs/blob/master/docs/zh_cn/introduction.md)
+1. [平台说明](#平台说明)
+2. [快速开始](#快速开始)
+3. [平台内容](#平台内容)
 
-## 平台说明
+## <a id='平台说明'>平台说明</a>
 
 ```羲和AI```平台是基于以MindSpore为代表的新型开源深度学习框架，旨在为AI学习者和开发者提供在线学习的项目、模型和数据集的平台。本平台的项目、数据集是可以运用到机器学习、深度学习算法，并且我们也添加了各领域的经典数据集.来帮助学习者解决AI学习过程中的一系列难， 如高质量的数据集不易获得，以及本地难以使用大体量数据集进行模型训练等。为用户提供多种业务场景的支持。
 
@@ -14,13 +16,15 @@
 
 本文将引导用户对该平台的基础功能进行一个快速浏览, 以便用户了解该平台的主要功能.
 
-## 快速开始
+## <a id='快速开始'>快速开始</a>
 
-[我们的平台提供了项目模块：覆盖多领域任务，体验全流程开发，支持用户在线训练和推理可视化，可创建自己的项目空间](https://xihe.mindspore.cn/home)。
+我们的平台提供了
 
-[模型模块：覆盖全领域主流模型，可体验MindSpore大模型推理API，用户既可下载公开的预训练模型，也可以上传自行训练的模型文件](https://xihe.mindspore.cn/home)。
+[项目模块](https://xihe.mindspore.cn/home)：覆盖多领域任务，体验全流程开发，支持用户在线训练和推理可视化，可创建自己的项目空间。
 
-[数据集模块：在数据集仓库中，你既可以下载公开的数据集，也可以上传合规的数据集](https://xihe.mindspore.cn/home)。
+[模型模块](https://xihe.mindspore.cn/home)：覆盖全领域主流模型，可体验MindSpore大模型推理API，用户既可下载公开的预训练模型，也可以上传自行训练的模型文件。
+
+[数据集模块](https://xihe.mindspore.cn/home)：在数据集仓库中，你既可以下载公开的数据集，也可以上传合规的数据集。
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1014.png)
 
@@ -44,13 +48,17 @@
 
 您也可以在线训练和推理可视化
 
-推理
+推理可视化实例
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1062.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1102.png)
 
-训练
+点击启动就可以开始体验
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E9%A1%B9%E7%9B%AE%E5%9B%BE%E7%89%87/WechatIMG1063.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1105.png)
+
+点击创建训练实例，然后创建配置文件，如果您已经有配置文件了，也可以直接上传。
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1108.png)
 
 新建或上传预训练文件
 
@@ -66,9 +74,13 @@
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1022.png)
 
-您也可以下载，收藏需要的模型。如图：
+您也可以下载，收藏需要的模型。如图点击模型卡片：
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1019.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1119.png)
+
+您可以点击收藏模型按钮收藏模型，也可以下载模型的ckpt文件。
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1121.png)
 
 [上传，下载、收藏数据集](https://gitee.com/link?target=http%3A%2F%2Fxhpc.vic0.com%2Fproject)
 
@@ -80,15 +92,21 @@
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1001.png)
 
-您也可以下载需要的数据集。如图：
+您也可以下载需要的数据集。如图点击模型卡片：
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1029.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1118.png)
+
+您可以点击收藏数据集按钮对数据集进行收藏，也可以点击数据集链接去下载数据集。
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1117.png)
+
+## <a id='平台内容'>平台内容</a>
 
 平台主要有项目、模型、数据集、三大部分，
 
-- [项目](https://gitee.com/link?target=https%3A%2F%2Fwww.mindspore.cn%2Fresources%2Fcases)：优质公开项目，完美支持Notebook、脚本及图形化任务。
-- [模型](https://gitee.com/link?target=https%3A%2F%2Fwww.mindspore.cn%2Flite%2Fdocs%2Fzh-CN%2Fr1.7%2Fmodel_lite.html%23)：公开的模型，完美支持多操作系统和硬件平台的模型推理，图像处理等功能，覆盖CV、NLP、推荐算法等众多AI热门领域。
-- [数据集](https://gitee.com/link?target=https%3A%2F%2Fwww.mindspore.cn%2Fresources%2Fhub)：上千开放数据集，种类多样，覆盖CV、NLP、推荐算法等众多AI热门领域，支持数据集预览、下载、上传。
+- [项目](https://gitee.com/link?target=https%3A%2F%2Fwww.mindspore.cn%2Fresources%2Fcases)：覆盖多领域任务，体验全流程开发，支持用户在线训练和推理可视化，可创建自己的项目空间。
+- [模型](https://gitee.com/link?target=https%3A%2F%2Fwww.mindspore.cn%2Flite%2Fdocs%2Fzh-CN%2Fr1.7%2Fmodel_lite.html%23)：覆盖全领域主流模型，可体验MindSpore大模型推理API，用户既可下载公开的预训练模型，也可以上传自行训练的模型文件。
+- [数据集](https://gitee.com/link?target=https%3A%2F%2Fwww.mindspore.cn%2Fresources%2Fhub)：在数据集仓库中，你既可以下载公开的数据集，也可以上传合规的数据集。
 
 ```羲和AI```平台为使用者预置华为AI [Mindspore深度学习开发框架](https://mindspore.cn/install)点击即可配置开发环境。
 
