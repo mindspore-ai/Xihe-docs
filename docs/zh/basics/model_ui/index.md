@@ -1,22 +1,24 @@
 # 模型
 
-更新时间：2022-06-30
+更新时间：2022-07-13
 
 **目录**
 
-1. [页面概览]()
-2. [查看公开模型]()
-3. [下载模型]()
-4. [新建模型]()
-5. [对模型添加标签]()
+1. [页面概览](#页面概览)
+2. [查看公开模型](#查看公开模型)
+3. [下载模型](#下载模型)
+4. [新建模型](#新建模型)
+5. [对模型添加标签](#对模型添加标签)
 
-## 页面概览
+## <a id="页面概览">页面概览</a>
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG983.png)
+模型：覆盖全领域主流模型，可体验MindSpore大模型推理API，用户既可下载公开的预训练模型，也可以上传自行训练的模型文件。
 
-本页面即模型大厅页，用于查看，创建，下载各种模型，左侧是标签，有应用分类，处理器，文件格式，框架，训练数据集，协议等。每个模型都可以根据对应的特点设置相应的标签，如果您觉得这个模型不错，也可以手动点击小爱心对模型进行收藏。底部的模型页栏，可以进行翻页操作。
+下图页面即模型大厅页，左侧是标签，有应用分类，处理器，文件格式，框架，训练数据集，协议等。每个模型都可以根据对应的特点设置相应的标签，如果您觉得这个模型不错，也可以进入模型卡片手动点击小爱心对模型进行收藏。底部的模型页栏，可以进行翻页操作。
 
-## 查看公开模型
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG1070.png)
+
+## <a id="查看公开模型">查看公开模型</a>
 
 如果想快速得到想用的模型，可以进入界面可以看到模型卡片，您可以搜索您需要的模型。
 
@@ -24,15 +26,15 @@
 
 点击进入模型卡片后您可以看到模型的描述和，模型的架构，并且我们还附上了链接，方便您更深入的了解模型。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG986.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG1071.png)
 
-### 下载模型
+## <a id="下载模型">下载模型</a>
 
 点击模型卡片，进入模型界面->点击文件->下载ckpt文件。
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG987.png)
 
-### 新建模型
+## <a id="新建模型">新建模型</a>
 
 点击模型大厅页面右上方模型卡片新建模型。
 
@@ -46,7 +48,7 @@
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E7%89%87/WechatIMG995.png)
 
-## 对模型添加标签
+## <a id="对模型添加标签">对模型添加标签</a>
 
 可以根据您的模型添加对应的标签。
 
