@@ -1,111 +1,123 @@
-# 用户协议
+# 用户操作
 
-更新时间：2022-07-13
+更新时间：2022-07-19
 
 **目录**
 
-1. [羲和账户](#羲和账户)
-2. [服务使用规范](#服务使用规范)
-3. [知识产权保护](#知识产权保护)
-4. [羲和内容](#羲和内容)
-5. [条款变更](#条款变更)
-6. [免责声明](#免责声明)
+1. [用户登录](#用户登录)
 
-**更新日期/生效日期: 2022-07-13
+2. [用户注册](#用户注册)
 
-欢迎来到```羲和AI```。
+3. [个人主页](#个人主页)
 
-```羲和AI```是提供了项目、模型、数据集内容的平台，旨在为学习者解决AI学习过程中的一系列难题, 如高质量的数据集不易获得, 以及本地难以使用大体量数据集进行模型训练等.
+4. [设置个人资料](#设置个人资料)
 
-以下条款（以及被引用的文档中的条款）描述了您使用我们网站，产品，服务和应用程序（以下简称“服务”）的规则和限制。如果您对这些条款或服务有任何问题，意见或疑虑，请与我们联系。
+   4.1.  [公开资料](#公开资料)
 
-以下文档为本用户协议的一部分：
+   4.2.  [账户安全](#账户安全)
 
-1） [《Mindspore安全》](https://mindspore.cn/security)；
+   4.3.  [邮件](#邮件)
 
-2） [《隐私声明 》](https://consumer.huawei.com/cn/privacy/privacy-policy/)；
+## <a id="用户登录页面">用户登录</a>
 
-## <a id="羲和账户">羲和账户</a>
+进入```昇思大模型```首页，点击头像菜单栏，再点击登录即可跳转登录界面
 
-您需要拥有一个```羲和AI```帐户并登录您的```羲和AI```账户才能使用```羲和AI```的服务。 未经我们事先书面许可，您不得将您的帐户转让给任何其他人。
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1147.png)
 
-如果您代表某个组织或实体同意这些条款，则您声明并保证您有权代表该组织或实体同意这些条款并将其约束于这些条款, 但您仍然需要为您的组织中的每个用户独立注册```羲和AI```账号。即使您代表组织或实体，也不允许多个人共用同一个```羲和AI```账号。
-
-您仅将```羲和AI```用于您自己的个人用途或其他非商业用途，而不能代表或为了任何第三方的利益，并且只能以符合适用于您的所有法律的方式使用。如果适用法律禁止您使用```羲和AI```服务，则您无权使用```羲和AI```。如果您以违反法律的方式使用```羲和AI```，我们概不负责。
-
-您将保持所有注册信息的准确性和最新性。您不能与任何人共享您的帐户或密码，您必须保护帐户和密码的安全。您对与您的帐户相关的任何活动负责。
-
-进入```羲和AI```平台首页点击人物头像标记即可跳转登录界面
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1048.png)
-
-我们可以使用手机验证码、邮箱验证码、Github、Gitte、微信等登录方式。
+您可以使用手机验证码、邮箱验证码、Github、Gitte、微信等快速登录方式。
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1041.png)
 
-登录成功之后，即可到个人主页设置个人资料。
+注意需勾选并同意[隐私政策](https://gitee.com/link?target=https%3A%2F%2Fmindspore.cn%2Fprivacy)与[法律声明](https://gitee.com/link?target=https%3A%2F%2Fmindspore.cn%2Flegal)才可以登录。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1043.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1139.png)
+
+## <a id="用户注册">用户注册</a>
+
+点击立即注册按钮跳转到用户注册页面，您可以选择邮箱注册或手机注册。
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1150.png)邮箱注册：账号为邮箱格式，密码长度至少为6位，且要包含英文、数字与符号中的两种
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1148.png)
+
+手机号注册：输入手机号，发送验证码至当前手机号，填写验证码，完成注册。
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1149.png)
+
+注意：完成注册前需勾选并同意[隐私政策](https://gitee.com/link?target=https%3A%2F%2Fmindspore.cn%2Fprivacy)与[法律声明](https://gitee.com/link?target=https%3A%2F%2Fmindspore.cn%2Flegal)才可以登录
+
+## <a id="个人主页">个人主页</a>
+
+点击右上角头像菜单栏，然后点击个人主页。
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1134.png)
+
+在个人主页里面，点击左侧的粉丝按钮和关注按钮即可查看，您关注的用户和关注您的用户。
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1165.png)
+
+您关注的用户
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1164.png)
+
+关注您的用户
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1163.png)
+
+点击动态按钮，可以查看您最近对的项目、模型或数据集操作的情况。
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1159.png)
+
+点击项目按钮可以查看您创建的项目
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1166.png)
+
+点击模型按钮可以查看您创建的模型
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1155.png)
+
+点击数据集按钮可以查看您创建的数据集
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1157.png)
+
+## <a id="设置个人资料">设置个人资料</a>
+
+您可以直接在大厅头像菜单栏点击设置进入个人资料设置，也可以在个人主页中点击设置个人资料进入注册页面。
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1167.png)![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1136.png)
+
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1136.png)
 
 按照步骤就可以完成注册全流程啦。
 
-1.添加昵称、2.修改头像、3.添加个人简介、4.绑定手机、5.绑定邮箱
+ <a id="公开资料">公开资料</a>
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1047.png)
+在此页面您可以更换昵称，更改头像、添加个人简介
 
-更换头像的页面
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1172.png)
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1046.png)
+更换头像的页面，提供了多个头像供您选取。
 
-绑定邮箱
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1137.png)
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1044.png)绑定手机号码
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1138.png)
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1045.png)
+<a id="账户安全">账户安全</a>
 
-## <a id="服务使用规范">服务使用规范</a>
+您点击账户安全按钮，跳转到当前页面，在该页面您可以绑定您的手机号。
 
-1. 为了向您提供性能、体验更优的实训环境，```羲和AI```现阶段仅支持您使用Mindspore框架，暂时无法支持对TensorFlow/PyTorch/MxNet等其他框架的适配和保障。如您在```羲和AI```中使用其他框架，我们有权停止向您提供相关服务，由此可能导致的损失将由您自行承担。如后续```羲和AI```支持适配更多框架，平台会以公告的形式通知到您。
-2. 您需要保证并同意您不会以下列方式创建或上传任何内容, 或以其他方式使用```羲和AI```：
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1170.png)
 
-1） 侵犯其他任何人（包括```羲和AI```）的知识产权或任何其他权利，包括隐私和数据保护权利，或可能致使```羲和AI```承担连带责任的行为;
+输入您的手机号和手机号收到的验证码，即可完成手机号的绑定。
 
-2） 违反任何法律或法规;
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1168.png)
 
-3） 有害，欺诈，欺骗，威胁，骚扰，诽谤，淫秽或其他令人反感的;
+<a id="邮件">邮件</a>
 
-4） 危害您```羲和AI```帐户或其他任何人的安全（例如允许其他人使用您的```羲和AI```账户）;
+您点击邮件按钮，跳转到邮件页面，在邮件页面您可以绑定您的邮箱。
 
-5） 尝试以任何方式从任何其他用户获取密码，帐户或其他安全信息;
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1171.png)
 
-6） 违反任何计算机网络的安全性, 或试图破译任何密码;
+输入您的邮箱和邮箱收到的验证码，即可完成邮箱的绑定。
 
-7） 运行任何形式的自动应答器或“垃圾邮件”软件，或者在您未登录```羲和AI```时运行或激活任何进程，或者以其他方式干扰服务的正常运行（包括但不限于对服务的基础设施施加不合理的负担、运行```羲和AI```平台明确告知不支持的项目或框架）;
-
-8） 抓取网页, 运行爬虫, 获得数据或内容（通过使用手动或自动方式）;
-
-9） 反编译，逆向工程或以其他方式尝试获取```羲和AI```的源代码或```羲和AI```后端服务的信息。
-
-我们会采取必要的安全措施确保平台安全稳定运行，如发现您有任何违反上述规定的行为, 我们有权视您的行为性质，采取包括终止您使用服务或访问```羲和AI```、追究法律责任等措施。
-
-## <a id="知识产权保护">知识产权保护</a>
-
-您在```羲和AI```上创建或上传的内容, 包括文本，图形，数据，文章，照片，图像，插图和比赛结果（以下统称为“内容”）， 受版权和其他知识产权法保护。
-
-您需要承诺遵守您通过```羲和AI```访问或获取的任何内容中包含的知识产权，并且在未经该内容所有者和```羲和AI```事先同意, 您不会使用，复制，修改，翻译，发布，广播，传输，分发，执行，上传，展示，许可，出售或以其他方式利用任何非您拥有的内容，否则```羲和AI```或内容所有者可能停止您访问该内容，也可能追究您的侵权责任。
-
-## <a id="羲和内容">羲和内容</a>
-
-通过服务公开发布或私下传输的任何信息或内容, 由此类内容的来源方自行负责，您自行承担访问所有此类信息和内容的风险。对于该信息或内容中的任何错误或遗漏，或您可能因此而遭受的任何损害或损失，我们概不负责。 您需要对您在```羲和AI```上创建或生成的所有内容负责，并且您需要声明并保证您拥有这样做所需的所有权利。
-
-服务可能包含指向第三方网站或服务的链接、信息或连接，这些网站或服务并非由```羲和AI```拥有或控制（包括招聘职位发布）。当您访问第三方网站或参与第三方服务时，您已了解这样做是存在风险的，并且```羲和AI```不承担此类风险。我们鼓励您在跳出```羲和AI```时注意并阅读您访问或使用的每个第三方网站或服务的条款和隐私政策。
-
-## <a id="条款变更">条款变更</a>
-
-我们一直在努力改进```羲和AI```，因此条款也可能会随着时间而改变。我们可能会暂停或终止```羲和AI```的任何部分，或者我们可能引入新功能或对某些功能施加限制，或限制部分或全部服务的访问。当我们对```羲和AI```进行可能对您造成不利影响的重大更改时，我们会通知您，您继续使用```羲和AI```服务表示您同意更新后的服务协议。
-
-## <a id="免责声明">免责声明</a>
-
-```羲和AI```及其许可方或供应商均不对```羲和AI```中包含的或访问的任何内容作出任何保证，我们对```羲和AI```中包含的或通过```羲和AI```访问的材料的合法性, 准确性、版权合规性不承担任何责任。
-
-鉴于网络服务的特殊性，您同意我们可以随时变更、中断或停止部分或全部本服务。
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4-test.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1169.png)
