@@ -17,19 +17,25 @@
   .page-title {
     margin-top: 0;
   }
+  .header-anchor {
+    display: none;
+  }
   div[class*='language-'] {
     margin-bottom: 16px;
-    background: rgba(225, 230, 238, 0.3);
-    border: 1px solid rgba(151, 151, 151, 1);
+    background: #e9f0f8;
     border-radius: 0;
     pre {
       padding: 1em;
-      margin: 0.5em 0;
       overflow: auto;
+      background-color: #f3f9ff !important;
       code {
+        background-color: #f3f9ff !important;
         color: rgba(0, 0, 0, 0.5);
       }
     }
+  }
+  code {
+    background-color: #e9f0f8;
   }
   h1 {
     line-height: 48px;
@@ -37,13 +43,13 @@
     margin: 32px 0 40px 0;
   }
   h2 {
-    line-height: 24px;
-    font-size: 24px;
+    line-height: 28px;
+    font-size: 28px;
     margin: 40px 0 20px;
   }
   h3 {
-    line-height: 20px;
-    font-size: 18px;
+    line-height: 24px;
+    font-size: 24px;
     margin: 40px 0 12px;
     font-weight: 500;
   }
@@ -62,10 +68,14 @@
   h4,
   h5 {
     font-weight: 500;
+    a {
+      color: inherit;
+    }
   }
   p,
   ul li,
   ol li {
+    color: #4c4c4c;
     font-size: 14px;
     line-height: 24px;
     a {
@@ -95,7 +105,7 @@
   ul,
   ol {
     list-style: initial;
-    padding-left: 30px;
+    padding-left: 1em;
   }
   ol {
     list-style: decimal;
@@ -132,5 +142,33 @@
   a {
     font-weight: 500;
     color: var(--theme-color);
+  }
+  code,
+  pre {
+    // min-height: calc(100% - 20px);
+    font-size: 14px;
+    border-radius: 3px;
+    color: inherit;
+    background-color: #e9f0f8;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+      'Courier New', monospace;
+    // font-family: 'Helvetica', 'Arial', 'PingFang SC', 'Microsoft YaHei',
+    // sans-serif;
+  }
+  blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+  }
+  code {
+    padding: 2px 4px;
+  }
+  p {
+    code {
+      font-family: inherit;
+    }
+  }
+  .line-numbers-wrapper {
+    display: none;
   }
 }
