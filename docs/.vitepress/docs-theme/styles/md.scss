@@ -17,13 +17,18 @@
   .page-title {
     margin-top: 0;
   }
-  div[class*="language-"] {
+  div[class*='language-'] {
     margin-bottom: 16px;
+    background: rgba(225, 230, 238, 0.3);
+    border: 1px solid rgba(151, 151, 151, 1);
     border-radius: 0;
     pre {
       padding: 1em;
       margin: 0.5em 0;
       overflow: auto;
+      code {
+        color: rgba(0, 0, 0, 0.5);
+      }
     }
   }
   h1 {
@@ -71,12 +76,6 @@
   }
   p {
     margin-bottom: 8px;
-  }
-  a[href^="#"] {
-    display: none;
-  }
-  .icon.outbound {
-    display: none;
   }
   table {
     width: 100%;

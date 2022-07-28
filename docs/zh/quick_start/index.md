@@ -1,5 +1,4 @@
 [[toc]]
-
 ## &#x1F449;5分钟快速体验AI全流程开发
 
 在此教程中，我们将通过fork样例仓 <a href ="https://xihe.test.osinfra.cn/projects/wesley/lenet5_demo">wesley/lenet5_demo</a>，快速体验在羲和平台实现AI全流程开发——训练、推理和评估。
