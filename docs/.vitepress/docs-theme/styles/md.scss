@@ -21,21 +21,50 @@
     display: none;
   }
   div[class*='language-'] {
+    position: relative;
     margin-bottom: 16px;
     background: #e9f0f8;
     border-radius: 0;
+    // .copy {
+    //   position: absolute;
+    //   top: 8px;
+    //   right: 8px;
+    //   z-index: 2;
+    //   display: block;
+    //   justify-content: center;
+    //   align-items: center;
+    //   border-radius: 4px;
+    //   width: 40px;
+    //   height: 40px;
+    //   background-color: #ffffff;
+    //   opacity: 0;
+    //   cursor: pointer;
+    //   // background-image: var(--vp-icon-copy);
+    //   background-position: 50%;
+    //   background-size: 20px;
+    //   background-repeat: no-repeat;
+    //   transition: opacity 0.4s;
+    // }
     pre {
       padding: 1em;
       overflow: auto;
-      background-color: #f3f9ff !important;
+      background-color: #f3f9ff;
+      // background-color: #292d3e;
       code {
-        background-color: #f3f9ff !important;
-        color: rgba(0, 0, 0, 0.5);
+        background-color: #f3f9ff;
+
+        // background-color: #292d3e;
+        .line:empty {
+          display: none;
+        }
       }
     }
   }
-  code {
-    background-color: #e9f0f8;
+  .table-of-contents {
+    position: fixed;
+    // border-left: 2px solid var(--theme-color);
+    right: 60px;
+    top: 200px;
   }
   h1 {
     line-height: 48px;
@@ -124,7 +153,6 @@
       text-align: center;
       display: inline-block;
       vertical-align: middle;
-
       position: relative;
       left: 50%;
       transform: translateX(-50%);
@@ -142,18 +170,16 @@
   a {
     font-weight: 500;
     color: var(--theme-color);
+    &:hover {
+      text-decoration: underline;
+    }
   }
   code,
   pre {
-    // min-height: calc(100% - 20px);
     font-size: 14px;
     border-radius: 3px;
     color: inherit;
     background-color: #e9f0f8;
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-      'Courier New', monospace;
-    // font-family: 'Helvetica', 'Arial', 'PingFang SC', 'Microsoft YaHei',
-    // sans-serif;
   }
   blockquote {
     padding: 0 1em;
@@ -170,5 +196,8 @@
   }
   .line-numbers-wrapper {
     display: none;
+  }
+  .table-of-contents {
+    margin-top: 16px;
   }
 }

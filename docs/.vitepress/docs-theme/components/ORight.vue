@@ -158,6 +158,10 @@ function handleClick(status: number) {
       border-bottom: 5px solid transparent;
       margin-left: 8px;
     }
+    &:hover {
+      text-decoration: underline;
+      // color: var(--theme-color);
+    }
   }
   .no-click{
     cursor: not-allowed;
