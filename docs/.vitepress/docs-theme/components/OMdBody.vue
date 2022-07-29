@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useData } from 'vitepress';
-import OMdHead from './OMdHead.vue';
+import { useData } from "vitepress";
+import OMdHead from "./OMdHead.vue";
 
 // const { frontmatter } = useData();
 </script>
@@ -15,7 +15,14 @@ import OMdHead from './OMdHead.vue';
 </template>
 
 <style lang="scss">
-.layout {
-  min-height: calc(100vh - 80px - 240px);
+.wrapper {
+  margin: 0 auto;
+  max-width: 1040px;
+  @media (max-width: 1625px) {
+    margin:0 316px;
+  }
+  .layout {
+    min-height: calc(100vh - 80px - 240px);
+  }
 }
 </style>

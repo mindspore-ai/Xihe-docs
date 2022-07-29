@@ -71,18 +71,18 @@ onMounted(() => {
   margin-left: 300px;
 }
 .content {
-  display: grid;
-  grid-template-columns: 300px minmax(454px,1040px) 246px;
-  grid-gap: 140px;
-  grid-template-areas: ". b .";
+  // display: grid;
+  // grid-template-columns: 300px minmax(454px,1040px) 246px;
+  // grid-gap: 120px;
+  // grid-template-areas: ". b .";
   width: 100%;
   min-width: 1280px;
   margin: 80px auto 0 auto;
   position: relative;
 }
 main {
-  grid-area: b;
-  justify-content: center;
+  // grid-area: b;
+  // justify-content: center;
   margin: 0 auto;
   width: 100%;
 }
