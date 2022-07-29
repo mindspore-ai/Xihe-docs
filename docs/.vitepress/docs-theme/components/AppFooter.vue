@@ -32,20 +32,22 @@ import qrCodeImg from '@/assets/qr-code.png';
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1472px;
+  max-width: 1290px;
   margin: 0 auto;
   height: 200px;
   padding: 16px 16px;
   color: rgba(255, 255, 255, 1);
+   @media screen and (max-width:1625px) {
+      padding: 16px 60px;
+    }
 
   &-logo {
     display: flex;
     align-items: center;
-    height: 64px;
-    cursor: pointer;
+    width: 160px;
     img {
       vertical-align: top;
-      height: 100%;
+      width: 100%;
     }
   }
 

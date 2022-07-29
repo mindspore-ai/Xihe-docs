@@ -62,9 +62,13 @@
   }
   .table-of-contents {
     position: fixed;
+    min-width: 211px;
     // border-left: 2px solid var(--theme-color);
-    right: 60px;
+    right: 68px;
     top: 200px;
+    @media screen and (max-width:1260px) {
+      display: none;
+    }
   }
   h1 {
     line-height: 48px;

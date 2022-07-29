@@ -6,7 +6,7 @@ import logoImg from '@/assets/logo.png';
 
 <template>
   <div class="header">
-    <a class="header-logo" href="https://xihe.mindspore.cn">
+    <a class="header-logo" target="_blank" href="https://xihe.mindspore.cn">
       <img :src="logoImg" alt="" srcset="" />
     </a>
   </div>

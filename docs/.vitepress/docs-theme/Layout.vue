@@ -67,6 +67,7 @@ onMounted(() => {
   position: relative;
   min-width: 1280px;
   background-color: #18191d;
+  background-image: url(./footer-bg.png);
   z-index: 10;
   margin-left: 300px;
 }

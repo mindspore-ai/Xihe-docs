@@ -1,4 +1,4 @@
 const markdown = {
-    theme: "light-plus",
-  };
-  export default markdown;
+  theme: 'light-plus',
+};
+export default markdown;
