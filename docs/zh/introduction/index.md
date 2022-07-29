@@ -14,7 +14,7 @@
 
 ```昇思大模型体验平台```是基于以MindSpore为代表的新型开源深度学习框架，旨在为AI学习者和开发者提供在线学习的项目、模型和数据集的平台。我们也添加了各领域的经典数据集来帮助学习者解决AI学习过程中的一系列难， 如高质量的数据集不易获得，以及本地难以使用大体量数据集进行模型训练等。为用户提供多种业务场景的支持。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/12651659075420_.pic_hd.jpg)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/12591659059550_.pic_hd.jpg)
 
 本文将引导用户对该平台的基础功能进行一个快速浏览, 以便用户了解该平台的主要功能.
 
@@ -28,7 +28,7 @@
 
 [数据集模块](https://xihe.mindspore.cn/home)：在数据集仓库中，你既可以下载公开的数据集，也可以上传合规的数据集。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/12661659075438_.pic_hd.jpg)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/12601659059595_.pic_hd.jpg)
 
 [点击快速开始可以进入个人主页](https://xihe.mindspore.cn/MindSpore)。
 
@@ -102,7 +102,7 @@
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/WechatIMG1117.png)
 
-## 平台内容
+## <a id='平台内容'>平台内容</a>
 
 平台主要有项目、模型、数据集、三大部分，
 
