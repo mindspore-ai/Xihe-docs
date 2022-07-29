@@ -21,9 +21,9 @@
 
 ## 用户登录
 
-进入```昇思大模型```首页，点击头像菜单栏，再点击登录即可跳转登录界面
+进入```昇思大模型体验平台```首页，点击头像菜单栏，再点击登录即可跳转登录界面
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1147.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/12681659089456_.pic_hd.jpg)
 
 您可以使用手机验证码、邮箱验证码、Github、Gitte、微信等快速登录方式。
 
@@ -51,7 +51,7 @@
 
 点击右上角头像菜单栏，然后点击个人主页。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1134.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/12701659090994_.pic_hd.jpg)
 
 在个人主页里面，点击左侧的粉丝按钮和关注按钮即可查看，您关注的用户和关注您的用户。
 
@@ -85,7 +85,7 @@
 
 您可以直接在大厅头像菜单栏点击设置进入个人资料设置，也可以在个人主页中点击设置个人资料进入注册页面。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1167.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/12691659090562_.pic_hd.jpg)
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1136.png)
 
