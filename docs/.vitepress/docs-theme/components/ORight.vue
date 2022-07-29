@@ -121,12 +121,10 @@ function handleClick(status: number) {
 </script>
 
 <template>
-  <div class="docs-sidebar">
     <div class="page-turner">
       <a @click="handleClick(-1)" :class="isShow===1?'no-click':''">上一篇</a>
       <a @click="handleClick(1)" :class="isShow===2?'no-click':''">下一篇</a>
     </div>
-  </div>
 </template>
 
 <style lang="scss" scoped>
