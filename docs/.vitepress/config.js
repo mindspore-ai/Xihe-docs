@@ -1,4 +1,5 @@
-require('esbuild-register')
+require('esbuild-register');
 
-const config = require('./config/index.ts')
-module.exports = config.default
+const config = require('./config/index.ts');
+
+module.exports = config.default;
