@@ -25,25 +25,21 @@
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/12681659089456_.pic_hd.jpg)
 
-您可以使用手机验证码、邮箱验证码、Github、Gitte、微信等快速登录方式。
+您可以使用手机验证码、邮箱验证码、Github、Gitte等快速登录方式。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1041.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%9B%B4%E6%96%B0%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/13161659163205_.pic.jpg)
 
 注意需勾选并同意[隐私政策](https://gitee.com/link?target=https%3A%2F%2Fmindspore.cn%2Fprivacy)与[法律声明](https://gitee.com/link?target=https%3A%2F%2Fmindspore.cn%2Flegal)才可以登录。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1139.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%9B%B4%E6%96%B0%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/13171659163382_.pic.jpg)
 
-## 用户注册
+邮箱验证码登录：账号为邮箱格式，点击发送验证码，验证码会发送至指定邮箱，输入对应的验证码即可完成登录。
 
-点击立即注册按钮跳转到用户注册页面，您可以选择邮箱注册或手机注册。
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1150.png)邮箱注册：账号为邮箱格式，密码长度至少为6位，且要包含英文、数字与符号中的两种
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1148.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%9B%B4%E6%96%B0%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/13181659163800_.pic.jpg)
 
 手机号注册：输入手机号，发送验证码至当前手机号，填写验证码，完成注册。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1149.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%9B%B4%E6%96%B0%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/13191659163966_.pic.jpg)
 
 注意：完成注册前需勾选并同意[隐私政策](https://gitee.com/link?target=https%3A%2F%2Fmindspore.cn%2Fprivacy)与[法律声明](https://gitee.com/link?target=https%3A%2F%2Fmindspore.cn%2Flegal)才可以登录
 
@@ -55,7 +51,7 @@
 
 在个人主页里面，点击左侧的粉丝按钮和关注按钮即可查看，您关注的用户和关注您的用户。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1165.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%9B%B4%E6%96%B0%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/13101659162373_.pic.jpg)
 
 您关注的用户
 
@@ -71,23 +67,23 @@
 
 点击项目按钮可以查看您创建的项目
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1166.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%9B%B4%E6%96%B0%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/13111659162547_.pic.jpg)
 
 点击模型按钮可以查看您创建的模型
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1155.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%9B%B4%E6%96%B0%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/13121659162611_.pic.jpg)
 
 点击数据集按钮可以查看您创建的数据集
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1157.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%9B%B4%E6%96%B0%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/13131659162697_.pic.jpg)
 
 ## 设置个人资料
 
 您可以直接在大厅头像菜单栏点击设置进入个人资料设置，也可以在个人主页中点击设置个人资料进入注册页面。
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/12691659090562_.pic_hd.jpg)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%9B%B4%E6%96%B0%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/13151659162902_.pic_hd.jpg)
 
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E7%94%A8%E6%88%B7%E6%B3%A8%E5%86%8C/WechatIMG1136.png)
+![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%9B%B4%E6%96%B0%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6%E5%A4%B9/13141659162758_.pic.jpg)
 
 按照步骤就可以完成注册全流程啦。
 
