@@ -9,7 +9,7 @@ export default {
       link: "/zh/quick_start/",
     },
     {
-      text: "入门篇",
+      text: "操作篇",
       children: [
         {
           text: "用户操作文档",
@@ -30,26 +30,35 @@ export default {
       ],
     },
     {
-      text: "常见问题解答",
-      link: "/zh/FAQ/",
-    },
+      text: "教程篇",
+      children: [
+        {
+          text: "基于Lenet的手写数字体识别",
+          link: "/zh/tutorial/Lenet5/",
+        },
+        {
+          text: "基于ResNet50的图片分类任务",
+          link: "/zh/tutorial/Resnet50/",
+        },
+        {
+          text: "基于LSTM的文本情感分类任务教程",
+          link: "/zh/tutorial/LSTM/",
+        },
+        {
+          text: "基于CycleGAN的艺术家画作风格迁移",
+          link: "/zh/tutorial/CycleGAN/",
+        },
+      ],
+    }，
     {
       text: "附录",
       children: [
-        {
-          text: "最佳实践",
-          link: "/zh/appendix/recipes/",
-        },
-        {
-          text: "版本说明",
-          link: "/zh/appendix/changelog/",
-        },
         {
           text: "反馈方式",
           link: "/zh/appendix/feedback/",
         },
         {
-          text: "使用协议",
+          text: "用户协议",
           link: "/zh/appendix/license/",
         },
       ],

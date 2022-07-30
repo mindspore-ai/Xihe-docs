@@ -1,26 +1,28 @@
 [[toc]]
 
-## &#x1F449;5分钟快速体验AI全流程开发
+# &#x1F449;基于Lenet的手写数字体识别
 
 在此教程中，我们将通过fork样例仓 <a href ="https://xihe.mindspore.cn/projects/wesley/lenet5_demo">wesley/lenet5_demo</a>，快速体验在昇思大模型体验平台实现AI全流程开发——训练、推理和评估。
 
-### 基本介绍
 
-#### <a id="description">LeNet描述</a>
+
+## 基本介绍
+
+### LeNet描述
 
 LeNet是1998年提出的一种典型的卷积神经网络。它被用于数字识别并取得了巨大的成功。
 
 [论文](https://gitee.com/link?target=https%3A%2F%2Fieeexplore.ieee.org%2Fdocument%2F726791)： Y.Lecun, L.Bottou, Y.Bengio, P.Haffner.Gradient-Based Learning Applied to Document Recognition.*Proceedings of the IEEE*.1998.
 
-#### <a id="arch">模型架构</a>
+### 模型架构
 
 LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ![image0](https://mindspore-website.obs.cn-north-4.myhuaweicloud.com/website-images/r1.7/tutorials/source_zh_cn/beginner/images/lenet.png)
 
-#### <a id="task">任务简介</a>
+### 任务简介
 
-基于公开的模型仓库 <a href ="https://xihe.mindspore.cn/projects/wesley/lenet5_demo">wesley/lenet_mnist</a> 下的MindSpore预训练文件 `lenet-1_1875.ckpt` 和数据集 <a href="https://xihe.test.osinfra.cn/datasets/wesley/mnist">wesley/mnist</a> 实现迁移学习，在羲和平台体验训练、评估和推理可视化全流程AI开发体验。
+基于公开的模型仓库 <a href ="https://xihe.mindspore.cn/projects/wesley/lenet5_demo">wesley/lenet_mnist</a> 下的MindSpore预训练文件 `lenet-1_1875.ckpt` 和数据集 <a href="https://xihe.mindspore.cn/datasets/wesley/mnist">wesley/mnist</a> 实现迁移学习，在羲和平台体验训练、评估和推理可视化全流程AI开发体验。
 
 **项目地址**
 
@@ -50,7 +52,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 
 
-### <a id="effect">效果展示</a>
+## 效果展示
 
 **训练**
 
@@ -74,9 +76,9 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 
 
-### <a id="quickstart">快速开始</a>
+## 快速开始
 
-#### <a id="fork">Fork 样例仓</a>
+### Fork 样例仓
 
 1.在项目搜索页中，搜索样例仓 <a href ="https://xihe.test.osinfra.cn/projects/wesley/lenet5_demo">wesley/lenet5_demo</a>
 
@@ -86,7 +88,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ![Fork](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/quickstart_fork.png)
 
-#### <a id="train_eval">训练与评估</a>
+#### 训练与评估
 
 1.选择`训练`页签，点击`创建训练实例`按钮
 
@@ -292,7 +294,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
   
 
-#### <a id="inference">推理可视化</a>
+### 推理可视化
 
 选择`推理`页签，点击`启动`按钮，启动过程会比较慢，请耐心等待，一般为5分钟以内，若时间过长，请检查推理代码。
 
@@ -302,12 +304,12 @@ MNIST画板效果展示
 
 
 
-### <a id="advance">进阶操作</a>
+## 进阶操作
 
 若你想在羲和平台中从0到1创建自己的训练实例、评估和推理可视化，可以参考 <a href="">手把手教你实现AI全流程教程</a>
 
 
 
-### <a id="feedback">问题反馈</a>
+## 问题反馈
 
 您如果按照教程操作过程中出现任何问题，您可以联系我们的邮箱`contact@mindspore.cn`，我们会及时回复您。如果您有任何建议，也可以添加官方助手小猫子（微信号：mindspore0328），我们非常欢迎您的宝贵建议，如被采纳，会受到MindSpore官方精美礼品哦！
