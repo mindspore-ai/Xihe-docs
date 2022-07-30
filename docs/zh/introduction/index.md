@@ -13,7 +13,7 @@
 
 ## 平台说明
 
-```昇思大模型体验平台```是基于以MindSpore为代表的新型开源深度学习框架的平台，旨在为AI学习者和开发者提供在线学习的项目、模型、大模型体验和数据集的平台。我们也添加了各领域的经典数据集来帮助学习者解决AI学习过程中的一系列难， 如高质量的数据集不易获得，以及本地难以使用大体量数据集进行模型训练等。为用户提供多种业务场景的支持。
+```昇思大模型体验平台```旨在为AI学习者和开发者提供在线学习的项目、模型、大模型体验和数据集的平台。我们也添加了各领域的经典数据集来帮助学习者解决AI学习过程中的一系列难， 如高质量的数据集不易获得，以及本地难以使用大体量数据集进行模型训练等。为用户提供多种业务场景的支持。
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0%E6%89%8B%E6%8C%87%E5%8D%97/12651659075420_.pic_hd.jpg)
 
@@ -27,7 +27,7 @@
 
 [模型模块](https://xihe.mindspore.cn/models)：覆盖全领域主流模型，可体验MindSpore大模型推理API，用户既可下载公开的预训练模型，也可以上传自行训练的模型文件。
 
-[大模型模块](https://codexihe.mindspore.cn/modelzoo)：在线体验预训练超大模型任务。
+[大模型模块](https://xihe.mindspore.cn/modelzoo)：在线体验预训练超大模型任务。
 
 [数据集模块](https://xihe.mindspore.cn/datasets)：在数据集仓库中，你既可以下载公开的数据集，也可以上传合规的数据集。
 
@@ -113,7 +113,7 @@
 
 - [项目](https://xihe.mindspore.cn/projects)：覆盖多领域任务，体验全流程开发，支持用户在线训练和推理可视化，可创建自己的项目空间。
 - [模型](https://xihe.mindspore.cn/models)：覆盖全领域主流模型，可体验MindSpore大模型推理API，用户既可下载公开的预训练模型，也可以上传自行训练的模型文件。
-- [大模型](https://codexihe.mindspore.cn/modelzoo)：在线体验预训练超大模型任务。
+- [大模型](https://xihe.mindspore.cn/modelzoo)：在线体验预训练超大模型任务。
 - [数据集](https://xihe.mindspore.cn/datasets)：在数据集仓库中，你既可以下载公开的数据集，也可以上传合规的数据集。
 
 ```昇思大模型体验平台```为使用者预置华为AI [Mindspore深度学习开发框架](https://mindspore.cn/install)点击即可配置开发环境。
