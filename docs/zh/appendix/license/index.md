@@ -4,12 +4,12 @@
 
 **目录**
 
-1. [昇思大模型体验平台账户](https://gitee.com/xinwenh/xhdocs/blob/master/docs/zh_cn/basics/user_ui.md)
-2. [对服务的使用限制](https://gitee.com/xinwenh/xhdocs/blob/master/docs/zh_cn/basics/user_ui.md)
-3. [知识产权保护](https://gitee.com/xinwenh/xhdocs/blob/master/docs/zh_cn/basics/user_ui.md)
-4. [昇思大模型体验平台内容](https://gitee.com/xinwenh/xhdocs/blob/master/docs/zh_cn/basics/user_ui.md)
-5. [条款变更](https://gitee.com/xinwenh/xhdocs/blob/master/docs/zh_cn/basics/user_ui.md)
-6. [免责声明](https://gitee.com/xinwenh/xhdocs/blob/master/docs/zh_cn/basics/user_ui.md)
+1. [昇思大模型体验平台账户](#昇思大模型体验平台账户)
+2. [对服务的使用限制](#对服务的使用限制)
+3. [知识产权保护](#知识产权保护)
+4. [昇思大模型体验平台内容](#昇思大模型体验平台内容)
+5. [条款变更](#条款变更)
+6. [免责声明](#免责声明)
 
 **更新日期/生效日期: 2022-06-30**
 
@@ -21,9 +21,9 @@
 
 您必须同意并接受所有条款，否则您无权使用服务。您以任何方式使用服务意味着您同意所有这些条款，并且这些条款在您使用服务时持续有效。 以下文档通过引用成为本用户协议的一部分：
 
-1） [《Mindspore安全》](https://mindspore.cn/security)；
+1） [《Mindspore安全》](https://mindspore.cn/security)
 
-2） [《隐私声明 》](https://consumer.huawei.com/cn/privacy/privacy-policy/)；
+2） [《隐私声明 》](https://consumer.huawei.com/cn/privacy/privacy-policy/)
 
 ## 昇思大模型体验平台账户
 
