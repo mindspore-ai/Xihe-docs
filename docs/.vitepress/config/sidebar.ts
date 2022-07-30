@@ -49,7 +49,7 @@ export default {
           link: "/zh/tutorial/CycleGAN/",
         },
       ],
-    }，
+    },
     {
       text: "附录",
       children: [
