@@ -22,7 +22,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ### 任务简介
 
-基于公开的模型仓库 <a href ="https://xihe.mindspore.cn/projects/wesley/lenet5_demo">wesley/lenet_mnist</a> 下的MindSpore预训练文件 `lenet-1_1875.ckpt` 和数据集 <a href="https://xihe.mindspore.cn/datasets/wesley/mnist">wesley/mnist</a> 实现迁移学习，在羲和平台体验训练、评估和推理可视化全流程AI开发体验。
+基于公开的模型仓库 <a href ="https://xihe.mindspore.cn/projects/wesley/lenet5_demo">wesley/lenet_mnist</a> 下的MindSpore预训练文件 `lenet-1_1875.ckpt` 和数据集 <a href="https://xihe.mindspore.cn/datasets/wesley/mnist">wesley/mnist</a> 实现迁移学习，在昇思大模型体验平台体验训练、评估和推理可视化全流程AI开发体验。
 
 **项目地址**
 
@@ -54,7 +54,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ## 效果展示
 
-**训练**
+### 训练
 
 训练列表
 
@@ -64,13 +64,13 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ![训练日志](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/effect_log.png)
 
-**评估**
+### 评估
 
 ![aim评估](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/effect_metrics.png)
 
 由上图可知，当batch_size为64，momentum为0.9时，leanring_rate为0.1的loss最小
 
-**推理**
+### 推理
 
 ![训练推理](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/effect_inference.png)
 
@@ -80,7 +80,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ### Fork 样例仓
 
-1.在项目搜索页中，搜索样例仓 <a href ="https://xihe.test.osinfra.cn/projects/wesley/lenet5_demo">wesley/lenet5_demo</a>
+1.在项目搜索页中，搜索样例仓 <a href ="https://xihe.mindspore.cn/projects/wesley/lenet5_demo">wesley/lenet5_demo</a>
 
 ![项目搜索](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/qucikstart_search.png)
 
@@ -88,7 +88,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ![Fork](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/quickstart_fork.png)
 
-#### 训练与评估
+### 训练与评估
 
 1.选择`训练`页签，点击`创建训练实例`按钮
 
@@ -306,7 +306,7 @@ MNIST画板效果展示
 
 ## 进阶操作
 
-若你想在羲和平台中从0到1创建自己的训练实例、评估和推理可视化，可以参考 <a href="">手把手教你实现AI全流程教程</a>
+若你想在昇思大模型体验平台中从0到1创建自己的训练实例、评估和推理可视化，可以参考 <a href="">手把手教你实现AI全流程教程</a>
 
 
 
