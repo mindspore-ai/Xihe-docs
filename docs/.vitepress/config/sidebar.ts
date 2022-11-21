@@ -33,20 +33,41 @@ export default {
       text: "教程篇",
       children: [
         {
+          text: "训练常见问题",
+          link: "/zh/tutorial/train/",
+        },
+        {
+          text: "推理常见问题",
+          link: "/zh/tutorial/inference/",
+        },
+        {
+          text: "评估常见问题",
+          link: "/zh/tutorial/evaluation/",
+        },
+        {
+          text: "仓库常见问题",
+          link: "/zh/tutorial/repo/",
+        },
+      ],
+    },
+    {
+      text: "案例篇",
+      children: [
+        {
           text: "基于Lenet的手写数字体识别",
-          link: "/zh/tutorial/Lenet5/",
+          link: "/zh/examples/Lenet5/",
         },
         {
           text: "基于ResNet50的图片分类任务",
-          link: "/zh/tutorial/Resnet50/",
+          link: "/zh/examples/Resnet50/",
         },
         {
           text: "基于LSTM的文本情感分类任务教程",
-          link: "/zh/tutorial/LSTM/",
+          link: "/zh/examples/LSTM/",
         },
         {
           text: "基于CycleGAN的艺术家画作风格迁移",
-          link: "/zh/tutorial/CycleGAN/",
+          link: "/zh/examples/CycleGAN/",
         },
       ],
     },
