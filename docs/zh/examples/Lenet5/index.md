@@ -20,7 +20,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ### 任务简介
 
-基于公开的模型仓库 <a href ="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet_mnist</a> 下的MindSpore预训练文件 `lenet-1_1875.ckpt` 和数据集 <a href="https://xihe.mindspore.cn/datasets/wesley/mnist">wesley/mnist</a> 实现迁移学习，在昇思大模型平台体验训练、评估和推理可视化全流程AI开发体验。
+基于公开的模型仓库 <a href ="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet_mnist</a> 下的MindSpore预训练文件 `lenet-1_1875.ckpt` 和公开的数据集 <a href="https://xihe.mindspore.cn/datasets/wesley/mnist">wesley/mnist</a> 实现迁移学习，在昇思大模型平台体验训练、评估和推理可视化全流程AI开发体验。
 
 **项目地址**
 
@@ -78,9 +78,9 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ### Fork 样例仓
 
-1.在项目搜索页中，搜索样例仓 <a href ="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet5_demo</a>
+1.在项目搜索页中，搜索样例仓 <a href ="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet5_demo</a>，或直接点击链接。
 
-![项目搜索](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/qucikstart_search.png)
+![项目搜索](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/quickstart_search.png)
 
 2.点击Fork
 

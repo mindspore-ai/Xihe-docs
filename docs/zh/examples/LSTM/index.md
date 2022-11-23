@@ -84,11 +84,13 @@
    <img src="https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/resnet50/train_info.PNG" width="70%">
 
 <a name="评估"></a>
+
 ### 评估
 
-<img src=" https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/resnet50/aim_metrics.png" width="70%">
+<img src="https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/resnet50/aim_metrics.png" width="70%">
 
 <a name="推理"></a>
+
 ### 推理
 
  <img src="https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lstm/gradio-positive.PNG" width="70%">

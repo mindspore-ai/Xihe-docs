@@ -1,4 +1,4 @@
-更加详细的文档参考[昇思大模型平台项目操作]()
+更加详细的文档参考[昇思大模型平台项目操作](https://xihe-docs.mindspore.cn/zh/tutorial/inference/)
 
 
 
@@ -24,12 +24,12 @@
 
   ```json
   {
-  	"pretrain":"<user>/<repo_name>/<...>/xxx.ckpt"
+  	"model_path":["<user>/<repo_name>/<...>/xxx.ckpt"]
   }
   ```
-  
-  配置文件的`key`必须为`pretrain`，代表的是权重文件。`value`值是模型下公开的权重文件，具体到仓库的文件路径。
-  
+
+  配置文件的`key`必须为`model_path`。`value`值是一个数组或列表，表示需要加载的模型下公开的权重文件，具体到仓库的文件路径。
+
   配置此参数，启动的时候会将文件下载到同级，且名字就为`xxx.ckpt`，所以引用文件的时候直接本地路径引用就行。
 
 - ...（可选）
