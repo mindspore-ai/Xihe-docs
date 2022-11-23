@@ -8,7 +8,7 @@
 
 我们以官方的<a href="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet5_demo</a>为例，原推理代码参考[MindSpore初学入门——手写数字识别](https://www.mindspore.cn/tutorials/zh-CN/r1.7/beginner/quick_start.html)
 
-原推理代码
+**原推理代码**
 
 ```python
 #!/usr/bin/env python
@@ -37,7 +37,7 @@ predicted = np.argmax(output.asnumpy(), axis=1)
 print(f'Predicted: "{predicted}", Actual: "{labels}"')
 ```
 
-结合gradio后的代码
+**结合gradio后的代码**
 
 ```python
 import cv2
@@ -92,19 +92,31 @@ Gradio快速入门请参考[Gradio快速入门](https://www.gradio.app/getting_s
 
 
 
-#### 2.创建config.json文件
+#### 2.创建`config.json`文件
 
-输入配置文件，平台不支持将权重文件上传到项目仓库，所以你需要将权重文件上传到模型仓库中。并通过`config.json`来配置，格式样例为
+平台不支持将权重文件上传到项目仓库，所以你需要将权重文件上传到模型仓库中。并通过`config.json`来配置，格式样例为
 
 ```json
 {
-	"pretrain":"<user>/<repo_name>/<...>/xxx.ckpt"
+	"model_path":["<user>/<repo_name>/<...>/xxx.ckpt"]
 }
 ```
 
-配置文件的`key`必须为`pretrain`。`value`值是模型下公开的权重文件，具体到仓库的文件路径。
+配置文件的`key`必须为`model_path`。`value`值是一个数组或列表，表示需要加载的模型下公开的权重文件，具体到仓库的文件路径。
 
-配置此参数，推理服务启动的时候会自动将该**user**下的**repo_name**的仓库下的**xxx/xxx.ckpt**文件下载到同级，且名字就为xxx.ckpt，所以加载权重文件的时候直接基于本地路径加载就行。
+配置此参数，推理服务启动的时候会自动将该**`user`**下的`repo_name`的仓库下的`xxx/xxx.ckpt`文件下载到同级，且名字就为`xxx.ckpt`，所以加载权重文件的时候直接基于本地路径加载就行。
+
+在此案例中，`config.json`为下：
+
+```json
+{
+	"model_path":["MindSpore/lenet_mnist/best.ckpt"]
+}
+```
+
+表示是需要加载的权重文件是`MindSpore`下的`lenet_mnist`仓库下的`best.ckpt`文件。在启动推理的时候，会将该文件下载到`inference`文件夹下，所以使用时直接本地引用。比如在加载代码中`load("./best.ckpt")`
+
+
 
 #### 3.创建`requirements.txt`依赖文件
 
@@ -122,116 +134,99 @@ opencv-python-headless
 jinja2==3.1.2
 ```
 
+
+
 #### **4.创建项目仓库，将推理代码上传到平台上**
 
-**创建项目仓库**（若已创建项目仓库，可跳过此步，直接到上传步骤）
-
-![train_create_project](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_create_project.png)
-
-本地项目推代码目录结构
+本地项目推理代码目录结构（`requirements.txt`、配置文件`config.json`和启动文件`app.py`必须在同一级）
 
 ```shell
 └─inference
-	├─app.py            # 核心启动文件
-	├─config.json       # 推理权重文件配置
+	├─app.py            # 核心启动文件，名字不可更改
+	├─config.json       # 推理权重文件配置，名字不可更改
 	...
-	└─requirments.txt	# 依赖文件
+	└─requirments.txt	# 依赖文件，名字不可更改
 ```
 
-需要将推理相关代码放在inference文件夹选。
+注意需要将推理相关代码放在`inference`文件夹下。
 
-**注**：注意推理核心文件名必须为`app.py`，配置文件名必须为`config.json`，依赖文件名必须为`requirements.txt`
+接下来将本地代码上传到平台上，执行以下步骤：
 
-**将本地的代码上传到平台上**
+- 创建项目仓库（若已存在项目仓库，则跳过此步骤）
 
-- 克隆仓库
+  ![train_create_project](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_create_project.png)
+
+- 获取仓库克隆链接
 
   点击头像菜单栏的个人主页，进入个人主页，打开需要上传推理代码的项目仓库，点击文件页签的下载按钮，复制clone链接 。
 
   ![train_clone_project](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_clone_project.png)
 
-  在terminal或者git bash执行git clone命令
+- 将本地文件上传到云端仓库
+
+  在本地的`terminal`或者`git bash`上执行以下命令
 
   ```shell
+  # 1. 克隆仓库
   git clone https://xxx/xxx.git
-  ```
-
-- cd 文件夹，并把代码复制到此文件夹下，注意不要放大文件（200KB）,否则会push失败。也不能上传lfs文件（即不可以git lfs track <大文件>）,否则会导致训练调度失败。
-
-- git add文件，将文件放在暂存区
-
-  ```shell
-  # 在文件夹最顶层
+  # 2. 进入到克隆后的仓库文件夹下，将代码复制到此文件夹下，注意不要放大文件（200KB）,否则会push失败。也不能上传lfs文件（即不可以git lfs track <大文件>）,否则会训练调度失败
+  # 3. 将所有更改的文件放在暂存区
   git add .
-  ```
-
-- git commit -m "<MESSAGE>"，将文件从暂存区上传到本地仓库
-
-  ```shell
-  git commit -m "<MESSAGE>"
-  ```
-
-- git push，将本地仓库push到远程仓库
-
-  ```shell
+  # 4. 将暂存区的文件上传到本地仓库
+  git commit -m "xxx"
+  # 5. 将本地仓库push到云端仓库，push成功之后建议在云端仓库检查文件是否上传成功
   git push
   ```
 
-  注意第一次push需登录，用户名为平台用户名，密码为个人中心的token
+  **注**：第一次push需登录，用户名为平台用户名，密码为个人中心的token
 
   ![train_git_push](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_git_push.png)
 
+
+
 #### 5.创建模型仓库，将指标最好的权重文件上传到平台上
 
-创建模型仓库（若平台上已有仓库，可跳过此步，直接到上传步骤）
+本地模型仓库目录结构
 
-![train_create_model](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_create_model.png)
+```shell
+.
+└── xxx.ckpt # 训练最好的权重文件
+```
 
-上传文件
+接下来将本地的权重文件上传到平台上，执行以下步骤：
 
-- 克隆仓库
+- 创建模型仓库（若已存在模型仓库，则跳过此步骤）
 
-  点击头像菜单栏的个人主页，进入个人主页，打开需要上传文件的模型仓库，点击文件页签的下载按钮，复制clone链接
+  ![train_create_model](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_create_model.png)
 
-  在terminal或者git bash执行git clone命令
+- 获取模型仓库链接
+
+  点击头像菜单栏的个人主页可以访问刚创建的模型仓库，打开模型仓库，点击下载按钮，复制clone链接 。
+
+- 将本地的预训练模型文件上传到平台上
+
+  在本地的`terminal`或者`git bash`上执行以下命令，其中`Git LFS`操作请参考[[![全球 Web 图标](https://ts3.cn.mm.bing.net/th?id=ODLS.644a2101-4b8d-4161-a013-62f890a57b7e&w=16&h=16&o=6&pid=1.2)](https://git-lfs.github.com/)[Git Large File Storage](https://git-lfs.github.com/)]
 
   ```shell
+  # 1. 克隆仓库
   git clone https://xxx/xxx.git
-  ```
-
-- cd 文件夹，并把文件复制到此文件夹下
-
-- git lfs track <大文件>
-
-  git lfs操作参考[[![全球 Web 图标](https://ts3.cn.mm.bing.net/th?id=ODLS.644a2101-4b8d-4161-a013-62f890a57b7e&w=16&h=16&o=6&pid=1.2)](https://git-lfs.github.com/)[Git Large File Storage](https://git-lfs.github.com/)]
-
-  ```shell
-  # 安装git lfs，只要安装一次就行
+  # 2. 进入到克隆后的仓库文件夹下，并将权重文件复制到此文件夹下
+  # 3. 标记大文件（超过200K）
+  # # 安装git lfs，只要安装一次就行
   git lfs intall
-  # track大文件，注意后面为正则，比如将.ckpt的文件标为大文件
+  # # track大文件，注意后面为正则，比如下例中将.ckpt的文件标为大文件
   git lfs track "*.ckpt"
-  # 查看.gitattribute文件是否生成
+  # # 查看.gitattribute文件是否生成
   cat .gitattribute
-  ```
-
-- git add文件，将文件放在暂存区
-
-  ```shell
-  # 在文件夹最顶层
+  # 4. 将所有更改的文件放在暂存区
   git add .
-  ```
-
-- git commit -m "<MESSAGE>"，将文件从暂存区上传到本地仓库
-
-  ```shell
-  git commit -m "<MESSAGE>"
-  ```
-
-- git push，将本地仓库push到远程仓库
-
-  ```shell
+  # 5. 将暂存区的文件上传到本地仓库
+  git commit -m "xxx"
+  # 6. 将本地仓库push到云端仓库，push成功之后建议在云端仓库检查文件是否上传成功
   git push
   ```
+
+
 
 #### 6.启动推理服务
 
@@ -249,7 +244,7 @@ jinja2==3.1.2
 
 
 
-> 注：如果推理不成功，可`F12`查看网络，查看具体的错误。
+> 注：如果推理不成功，可通过以下步骤核查代码。
 >
 > 如果出现错误，可以通过以下几个步骤检查
 >
@@ -259,8 +254,6 @@ jinja2==3.1.2
 > 4. 本地调试代码穿上平台上还是报错，可`F12`查看具体报错信息，平台也有错误日志打印，但会有一定延时性，不能及时返回。所以最好通过`F12`查看网络查看具体错误信息。
 > 5. 若以上情况都满足还是无法启动成功，请参考[问题反馈](#feedback)
 >
-
-
 
 
 
@@ -280,8 +273,6 @@ matplotlib
 mindvision
 esdk-obs-python==3.21.4
 ```
-
-
 
 
 

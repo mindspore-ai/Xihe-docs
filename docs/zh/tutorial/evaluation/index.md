@@ -1,10 +1,6 @@
-### Aim是什么？如何操作Aim web UI?
+### 
 
-
-
-
-
-### 添加自定义评估代码？
+### 如何在平台上实现自定义评估？
 
 评估依赖于训练，需训练完成之后才能进行评估。若打印训练日志的`Monitor`采用的是[`LossMonitor`](https://www.mindspore.cn/vision/docs/zh-CN/r0.1/engine.html?highlight=lossmonitor#mindvision.engine.callback.LossMonitor)或者[`ValAccMonitor`](https://www.mindspore.cn/vision/docs/zh-CN/r0.1/engine.html?highlight=valaccmonitor#mindvision.engine.callback.ValAccMonitor)，则支持标准评估，只能可视化打印出来的指标，若要支持更多的评估指标，则可以选择自定义评估的方式。具体操作如下。
 
@@ -72,10 +68,10 @@ def parse_args():
     parser = argparse.ArgumentParser(description="train mnist",
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     # 添加参数
-    parser.add_argument('--pretrain_url', type=str, default='./lenet/lenet-1_1875.ckpt', help='the training data')
-    parser.add_argument('--data_url', type=str, default='./mnist', help='the training data')
-    parser.add_argument('--output_path', default='./lenet', type=str, help='the path model saved')
-    parser.add_argument('--aim_repo', default='./db', type=str, help='the aim database repo path')
+    parser.add_argument('--pretrain_url', type=str, default='', help='the training data')
+    parser.add_argument('--data_url', type=str, default='', help='the training data')
+    parser.add_argument('--output_path', default='', type=str, help='the path model saved')
+    parser.add_argument('--aim_repo', default='', type=str, help='the aim repo path')
     # 解析参数
     args_opt = parser.parse_args()
     return args_opt
@@ -177,7 +173,7 @@ if __name__ == '__main__':
 - 需增加一个解析参数，且固定名为aim_repo，用于存储Aim跟踪数据集 repo path
 
   ```python
-  parser.add_argument('--aim_repo', default='', type=str, help='the aim database repo path')
+  parser.add_argument('--aim_repo', default='', type=str, help='the aim repo path')
   ```
 
 - Aim repo必须指定在`args_opt.aim_repo`下，具体语法可参考[Aim Run](https://aimstack.readthedocs.io/en/latest/using/configure_runs.html#id2)
@@ -188,6 +184,8 @@ if __name__ == '__main__':
   ```
 
 - 更多Aim的用法请参考[Aim](https://aimstack.readthedocs.io/en/latest/quick_start/setup.html)
+
+
 
 #### 2.创建`pip-requirements.txt`依赖文件
 
@@ -202,13 +200,11 @@ opencv-python-headless==4.5.5.64
 aim==3.8.1
 ```
 
+
+
 #### **3.创建项目仓库，并将训练代码上传到平台上**
 
-**创建项目仓库**（若已创建项目仓库，可跳过此步，直接到上传步骤）
-
-![train_create_project](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_create_project.png)
-
-本地项目代码目录结构
+本地项目代码目录结构（`pip-requirements.txt`和启动文件`train.py`必须在同一级）
 
 ```shell
 .
@@ -221,163 +217,143 @@ aim==3.8.1
 
 建议将训练相关代码放在一个文件夹中。
 
-**注**：`pip-requirements.txt`和启动文件`train.py`必须在同一级
+接下来将本地代码上传到平台上，执行以下步骤：
 
+- 创建项目仓库（若已存在项目仓库，则跳过此步骤）
 
+  ![train_create_project](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_create_project.png)
 
-**将本地的代码上传到平台上**
-
-- 克隆仓库
+- 获取仓库克隆链接
 
   点击头像菜单栏的个人主页可以访问刚创建的项目仓库，打开项目仓库，点击下载按钮，复制clone链接 。
 
   ![train_clone_project](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_clone_project.png)
 
-  在terminal或者git bash执行git clone命令
+- 将本地文件上传到云端仓库
+
+  在本地的`terminal`或者`git bash`上执行以下命令
 
   ```shell
+  # 1. 克隆仓库
   git clone https://xxx/xxx.git
-  ```
-
-- cd 文件夹，并把代码复制到此文件夹下，注意不要放大文件（200KB）,否则会push失败。也不能上传lfs文件（即不可以git lfs track <大文件>）,否则会训练调度失败。
-
-- git add文件，将文件放在暂存区
-
-  ```shell
-  # 在文件夹最顶层
+  # 2. 进入到克隆后的仓库文件夹下，将代码复制到此文件夹下，注意不要放大文件（200KB）,否则会push失败。也不能上传lfs文件（即不可以git lfs track <大文件>）,否则会训练调度失败
+  # 3. 将所有更改的文件放在暂存区
   git add .
-  ```
-
-- git commit -m "<MESSAGE>"，将文件从暂存区上传到本地仓库
-
-  ```shell
-  git commit -m "<MESSAGE>"
-  ```
-
-- git push，将本地仓库push到远程仓库
-
-  ```shell
+  # 4. 将暂存区的文件上传到本地仓库
+  git commit -m "xxx"
+  # 5. 将本地仓库push到云端仓库，push成功之后建议在云端仓库检查文件是否上传成功
   git push
   ```
 
-  注意第一次push需登录，用户名为平台用户名，密码为个人中心的token
+  **注**：第一次push需登录，用户名为平台用户名，密码为个人中心的token
 
   ![train_git_push](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_git_push.png)
 
+
+
 #### 4.创建模型仓库，将预训练文件上传到平台上
 
-**（若平台上有，可直接引用公开的模型文件创建训练实例，可跳过此步）**
+**（若平台上已有权重文件，可直接引用公开的模型文件创建训练实例，则可跳过此步）**
 
-创建模型仓库
+本地模型仓库目录结构
 
-![train_create_model](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_create_model.png)
+```shell
+.
+└── lenet-1_1875.ckpt # 权重文件
+```
 
-将本地的ckpt文件上传到平台上
+接下来将本地的权重文件上传到平台上，执行以下步骤：
 
-- 克隆仓库
+- 创建模型仓库（若已存在模型仓库，则跳过此步骤）
+
+  ![train_create_model](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_create_model.png)
+
+- 获取模型仓库链接
 
   点击头像菜单栏的个人主页可以访问刚创建的模型仓库，打开模型仓库，点击下载按钮，复制clone链接 。
 
-  在terminal或者git bash执行git clone命令
+- 将本地的预训练模型文件上传到平台上
+
+  在本地的`terminal`或者`git bash`上执行以下命令，其中`Git LFS`操作请参考[[![全球 Web 图标](https://ts3.cn.mm.bing.net/th?id=ODLS.644a2101-4b8d-4161-a013-62f890a57b7e&w=16&h=16&o=6&pid=1.2)](https://git-lfs.github.com/)[Git Large File Storage](https://git-lfs.github.com/)]
 
   ```shell
+  # 1. 克隆仓库
   git clone https://xxx/xxx.git
-  ```
-
-- cd 文件夹，并把文件复制到此文件夹下
-
-- git lfs track <大文件>
-
-  git lfs操作参考[[![全球 Web 图标](https://ts3.cn.mm.bing.net/th?id=ODLS.644a2101-4b8d-4161-a013-62f890a57b7e&w=16&h=16&o=6&pid=1.2)](https://git-lfs.github.com/)[Git Large File Storage](https://git-lfs.github.com/)]
-
-  ```shell
-  # 安装git lfs，只要安装一次就行
+  # 2. 进入到克隆后的仓库文件夹下，并将权重文件复制到此文件夹下
+  # 3. 标记大文件（超过200K）
+  # # 安装git lfs，只要安装一次就行
   git lfs intall
-  # track大文件，注意后面为正则，比如将.ckpt的文件标为大文件
+  # # track大文件，注意后面为正则，比如下例中将.ckpt的文件标为大文件
   git lfs track "*.ckpt"
-  # 查看.gitattribute文件是否生成
+  # # 查看.gitattribute文件是否生成
   cat .gitattribute
-  ```
-
-- git add文件，将文件放在暂存区
-
-  ```shell
-  # 在文件夹最顶层
+  # 4. 将所有更改的文件放在暂存区
   git add .
-  ```
-
-- git commit -m "<MESSAGE>"，将文件从暂存区上传到本地仓库
-
-  ```shell
-  git commit -m "<MESSAGE>"
-  ```
-
-- git push，将本地仓库push到远程仓库
-
-  ```shell
+  # 5. 将暂存区的文件上传到本地仓库
+  git commit -m "xxx"
+  # 6. 将本地仓库push到云端仓库，push成功之后建议在云端仓库检查文件是否上传成功
   git push
   ```
+
+
 
 #### 5.创建数据集仓库，将数据集上传到平台上
 
-（**若平台上有，可直接引用公开支持协议下的数据集，可跳过此步**）
+（**若平台上有数据集，可直接引用公开的可支持协议下的数据集，则可跳过此步**）
 
-创建数据集仓库
+本地数据集（[MNIST数据集](http://yann.lecun.com/exdb/mnist/)）仓库目录结构
 
-![train_dataset_model](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_create_dataset.png)
+```shell
+.
+├── test # 测试集
+│   ├── t10k-images-idx3-ubyte 
+│   └── t10k-labels-idx1-ubyte 
+└── train # 训练集
+    ├── train-images-idx3-ubyte
+    └── train-lables-idx1-ubyte
+```
 
-将本地的数据集文件上传到平台上
+接下来将本地的数据集上传到平台上，执行以下步骤：
 
-- 克隆仓库
+- 创建数据集仓库（若已存在数据集仓库，则跳过此步骤）
 
-  点击头像菜单栏的个人主页可以访问刚创建的数据集仓库，打开模型仓库，点击下载按钮，复制clone链接
+  ![train_dataset_model](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_create_dataset.png)
 
-  在terminal或者git bash执行git clone命令
+- 获取数据集仓库链接
+
+  点击头像菜单栏的个人主页可以访问刚创建的数据集仓库，打开模型仓库，点击下载按钮，复制clone链接 。
+
+- 将本地的数据集文件上传到平台上
+
+  在本地的`terminal`或者`git bash`上执行以下命令，其中`Git LFS`操作请参考[[![全球 Web 图标](https://ts3.cn.mm.bing.net/th?id=ODLS.644a2101-4b8d-4161-a013-62f890a57b7e&w=16&h=16&o=6&pid=1.2)](https://git-lfs.github.com/)[Git Large File Storage](https://git-lfs.github.com/)]
 
   ```shell
+  # 1. 克隆仓库
   git clone https://xxx/xxx.git
-  ```
-
-- cd 文件夹，并把文件复制到此文件夹下
-
-- git lfs track <大文件>
-
-  git lfs操作参考[[![全球 Web 图标](https://ts3.cn.mm.bing.net/th?id=ODLS.644a2101-4b8d-4161-a013-62f890a57b7e&w=16&h=16&o=6&pid=1.2)](https://git-lfs.github.com/)[Git Large File Storage](https://git-lfs.github.com/)]
-
-  ```shell
-  # 安装git lfs，只要安装一次就行
+  # 2. 进入到克隆后的仓库文件夹下，并将数据集文件复制到此文件夹下
+  # 3. 标记大文件（超过200K）
+  # # 安装git lfs，只要安装一次就行
   git lfs intall
-  # track大文件，注意后面为正则，比如将ubyte的文件标为大文件
+  # # track大文件，注意后面为正则，比如将ubyte的文件标为大文件
   git lfs track "*ubyte"
   
-  # 数据集仓库，很多时候需要标记文件夹，可参考以下文件夹
-  # 忽略文件夹中的所有文件(包含文件夹)
+  # # 数据集仓库，很多时候需要标记文件夹，可参考以下标记文件夹的命令（以标记datasets下的所有文件为大文件lfs为例）
+  # # 忽略文件夹中的所有文件(包含文件夹)
   git lfs track "datasets/**"
-  # 忽略文件夹中的文件(不包含文件夹)
+  # # 忽略文件夹中的文件(不包含文件夹)
   git lfs track "datasets/*"
-  
-  # 查看.gitattribute文件是否生成
+  # # 查看.gitattribute文件是否生成
   cat .gitattribute
-  ```
-
-- git add文件，将文件放在暂存区
-
-  ```shell
-  # 在文件夹最顶层
+  
+  # 4. 将所有更改的文件放在暂存区
   git add .
-  ```
-
-- git commit -m "<MESSAGE>"，将文件从暂存区上传到本地仓库
-
-  ```shell
-  git commit -m "<MESSAGE>"
-  ```
-
-- git push，将本地仓库push到远程仓库
-
-  ```shell
+  # 5. 将暂存区的文件上传到本地仓库
+  git commit -m "xxx"
+  # 6. 将本地仓库push到云端仓库，push成功之后建议在云端仓库检查文件是否上传成功
   git push
   ```
+
+
 
 #### 6.创建训练实例
 
@@ -389,17 +365,23 @@ aim==3.8.1
 
 ![train_create_trainform](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/eval/evlaution_create_train.png)
 
+
+
 #### 7.查看训练列表和训练日志
 
 查看训练列表
 
 ![train_trainlist](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_trainlist.png)
 
+
+
 #### 8.查看训练日志和详情
 
 点击训练名称，查看日志
 
 ![train_log](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/eval/evlaution_trainlog.png)
+
+
 
 #### 9.自定义评估
 
@@ -411,17 +393,23 @@ aim==3.8.1
 
 ![eval_loading](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/eval/evlaution_loading.png)
 
-评估成功，点击查看报告，即可弹出Aim UI
+评估成功，按钮变成查看报告
 
 ![eval_success](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/eval/evlaution_success.png)
 
-Aim 界面
+点击查看报告，可查看Aim 界面
 
-![eval_aim](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/eval/evaution_aim.png)
-
-
+![eval_aim](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/eval/eval_aim.gif)
 
 
 
+### Aim是什么？如何操作？
 
+待补充...
+
+
+
+### 问题反馈
+
+您如果按照教程操作过程中出现任何问题，您可以联系我们的邮箱`contact@mindspore.cn`，我们会及时回复您。如果您有任何建议，也可以添加官方助手小猫子（微信号：mindspore0328），我们非常欢迎您的宝贵建议，如被采纳，会受到MindSpore官方精美礼品哦！
 

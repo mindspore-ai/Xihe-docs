@@ -81,7 +81,7 @@ ResNet50的残差模块如下图，ResNet通过该残差模块解决了深度网
 <a name="评估"></a>
 ### 评估
 
-<img src=" https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/resnet50/aim_metrics.png" width="70%">
+<img src="https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/resnet50/aim_metrics.png" width="70%">
 
 <a name="推理"></a>
 ### 推理
