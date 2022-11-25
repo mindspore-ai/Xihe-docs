@@ -27,6 +27,10 @@ export default {
           text: "项目操作文档",
           link: "/zh/basics/project_ui/",
         },
+        {
+          text: "大模型体验文档",
+          link: "/zh/basics/big_model_ui/",
+        },
       ],
     },
     {

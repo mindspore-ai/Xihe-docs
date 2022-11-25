@@ -2,54 +2,9 @@
 
 
 
-### 如何指定不同的训练版本？
-
-目前平台支持的训练框架版本和规格，如下表：
-
-| 训练框架  | device  | version                                               | 计算资源                                            |
-| --------- | ------- | ----------------------------------------------------- | --------------------------------------------------- |
-| MindSpore | GPU/CPU | mindspore_1.3.0-cuda_10.1-py_3.7-ubuntu_1804-x86_64   | GPU：1*NVIDIA-V100（32GB）\|CPU：8核 64GB 3200 GB   |
-| MindSpore | Ascend  | mindspore_1.3.0-cann_5.0.2-py_3.7-euler_2.8.3-aarch64 | Ascend: 1*Ascend 910(32GB) \| ARM：24核 96GB 3200GB |
-| MindSpore | Ascend  | mindspore_1.5.1-cann_5.0.3-py_3.7-euler_2.8.3-aarch64 | Ascend: 1*Ascend 910(32GB) \| ARM：24核 96GB 3200GB |
-
-若要使用其他版本，需要重新安装新版本在基础镜像上做覆盖。注意系统、驱动、硬件版本是不能更改的，只能覆盖MindSpore的版本。
-
-**覆盖新版本**
-
-您可以通过在`pip-requirements.txt`上指定mindspore版本来覆盖原来的版本
-
-- CPU版本
-
-  ![安装CPU版本](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/pip_cpu.png)
-
-  上图在pip-requirements.txt上新增一行`mindspore`, 则会在启动训练镜像的时候会先`pip install mindspore`，不指定版本会默认安装最新的版本，当然你也可以指定你想要的版本。支持的版本请参考[MindSpore发布版本列表](https://www.mindspore.cn/versions)
-
-- GPU版本
-
-  平台支持CUDA版本是的CUDA10.2，所以请选择CUDA10.1的完整包。安装包链接参考[MindSpore安装](https://www.mindspore.cn/install)
-
-  注意不要通过`pip install mindspore-gpu==<VERSION>`的方式安装，1.3.0及以上版本升级时，默认选择CUDA11版本。详情请参考[ pip方式安装MindSpore GPU版本](https://gitee.com/mindspore/docs/blob/master/install/mindspore_gpu_install_pip.md)
-
-  ![安装GPU版本](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/pip_gpu.png)
-
-- Ascend版本
-
-  由于MindSpore版本与CANN包版本强依赖，Ascend版本暂不支持以上方法覆盖版本。
-
-**检查是否安装成功**
-
-可以正在训练代码中打印当前版本
-
-```python
-import mindspore
-print(mindspore.run_check())
-```
-
-
-
 ### 如何在平台上训练？
 
-#### **1.适配的更改训练代码**
+#### 1.适配的更改训练代码
 
 出于对平台训练环境的安全考虑，平台不支持通过代码下载文件。只能引用平台上的模型和数据集仓库的文件或文件夹。
 
@@ -193,7 +148,7 @@ opencv-python-headless==4.5.5.64
 
 
 
-#### **3.创建项目仓库，并将本地的训练代码上传到平台上**
+#### 3.创建项目仓库，并将本地的训练代码上传到平台上
 
 本地项目代码目录结构（`pip-requirements.txt`和启动文件`train.py`必须在同一级）
 
@@ -382,6 +337,53 @@ opencv-python-headless==4.5.5.64
 ![train_aim](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/train_aim.png)
 
 **注**：标准评估仅支持`LossMonitor`和`ValAccMonitor`，若要支持更多指标请参考自定义评估。
+
+
+
+### 如何指定不同的训练版本？
+
+目前平台支持的训练框架版本和规格，如下表：
+
+| 训练框架  | device  | version                                               | 计算资源                                            |
+| --------- | ------- | ----------------------------------------------------- | --------------------------------------------------- |
+| MindSpore | GPU/CPU | mindspore_1.3.0-cuda_10.1-py_3.7-ubuntu_1804-x86_64   | GPU：1*NVIDIA-V100（32GB）\|CPU：8核 64GB 3200 GB   |
+| MindSpore | Ascend  | mindspore_1.3.0-cann_5.0.2-py_3.7-euler_2.8.3-aarch64 | Ascend: 1*Ascend 910(32GB) \| ARM：24核 96GB 3200GB |
+| MindSpore | Ascend  | mindspore_1.5.1-cann_5.0.3-py_3.7-euler_2.8.3-aarch64 | Ascend: 1*Ascend 910(32GB) \| ARM：24核 96GB 3200GB |
+
+若要使用其他版本，需要重新安装新版本在基础镜像上做覆盖。注意系统、驱动、硬件版本是不能更改的，只能覆盖MindSpore的版本。
+
+**覆盖新版本**
+
+您可以通过在`pip-requirements.txt`上指定mindspore版本来覆盖原来的版本
+
+- CPU版本
+
+  ![安装CPU版本](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/pip_cpu.png)
+
+  上图在pip-requirements.txt上新增一行`mindspore`, 则会在启动训练镜像的时候会先`pip install mindspore`，不指定版本会默认安装最新的版本，当然你也可以指定你想要的版本。支持的版本请参考[MindSpore发布版本列表](https://www.mindspore.cn/versions)
+
+- GPU版本
+
+  平台支持CUDA版本是的CUDA10.2，所以请选择CUDA10.1的完整包。安装包链接参考[MindSpore安装](https://www.mindspore.cn/install)
+
+  注意不要通过`pip install mindspore-gpu==<VERSION>`的方式安装，1.3.0及以上版本升级时，默认选择CUDA11版本。详情请参考[ pip方式安装MindSpore GPU版本](https://gitee.com/mindspore/docs/blob/master/install/mindspore_gpu_install_pip.md)
+
+  ![安装GPU版本](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/train/pip_gpu.png)
+
+- Ascend版本
+
+  由于MindSpore版本与CANN包版本强依赖，Ascend版本暂不支持以上方法覆盖版本。
+
+**检查是否安装成功**
+
+可以正在训练代码中打印当前版本
+
+```python
+import mindspore
+print(mindspore.run_check())
+```
+
+
 
 
 

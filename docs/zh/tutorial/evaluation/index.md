@@ -1,4 +1,6 @@
-### 
+[[toc]]
+
+ 
 
 ### 如何在平台上实现自定义评估？
 
@@ -202,7 +204,7 @@ aim==3.8.1
 
 
 
-#### **3.创建项目仓库，并将训练代码上传到平台上**
+#### 3.创建项目仓库，并将训练代码上传到平台上
 
 本地项目代码目录结构（`pip-requirements.txt`和启动文件`train.py`必须在同一级）
 
@@ -402,10 +404,6 @@ aim==3.8.1
 ![eval_aim](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/tutorial/eval/eval_aim.gif)
 
 
-
-### Aim是什么？如何操作？
-
-待补充...
 
 
 

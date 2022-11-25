@@ -2,7 +2,7 @@
 
 # 仓库文件操作
 
-更新时间：2022-11-23
+更新时间：2022-11-25
 
  **目录**
 
@@ -12,16 +12,10 @@
     - [Token密码的获取](#Token密码的获取)
     - [查看当前用户名和邮箱](#查看当前用户名和邮箱)
     - [修改用户名、密码、邮箱信息](#修改用户名、密码、邮箱信息)
-  - [项目仓的Git操作](#项目仓的Git操作)
-    - [Git克隆个人项目](#Git克隆个人项目)
-    - [Git lfs操作大文件](#Git lfs操作大文件)
-    - [Git克隆他人项目](#Git克隆他人项目)
-  - [模型仓的Git操作](#模型仓的Git操作)
-    - [Git克隆个人模型](#Git克隆个人模型)
-    - [Git克隆他人模型](#Git克隆他人模型)
-  - [数据集的Git操作](#数据集的Git操作)
-    - [Git克隆个人数据集](#Git克隆个人数据集)
-    - [Git克隆他人数据集](#Git克隆他人数据集)
+  - [仓库的Git操作](#仓库的Git操作)
+    - [Git克隆个人仓库](#Git克隆个人仓库)
+    - [Git克隆他人仓库](#Git克隆他人仓库)
+    - [Git_lfs操作大文件](#Git_lfs操作大文件)
 
 ## Git操作环境准备
 
@@ -58,9 +52,11 @@ git config --global user.password "123456(新的密码)"
 
 这里的zhangsan和邮箱都是你修改之后的用户名和邮箱
 
-## 项目仓的Git操作
+## 仓库的Git操作
 
-#### Git克隆个人项目
+**注**：只有个人代码仓可以push，他人代码仓只能克隆；项目、模型、数据集仓库操作类似。这边主要展示项目仓库。
+
+#### Git克隆个人仓库
 
 点击个人主页->项目->进入项目界面->项目卡片->点击克隆。
 
@@ -77,32 +73,46 @@ git config --global user.password "123456(新的密码)"
 点击克隆按钮，得到Git克隆当前仓库的链接：
 
 ```python
-https://source-xihe.test.osinfra.cn/Mindspore/project-mnist-test.git。
+#克隆的链接
+https://source-xihe.test.osinfra.cn/Mindspore/project-mnist-test.git
 ```
 
 ![image-20221108155837102](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/6461668151043_.pic.jpg)
 
-打开终端，Git克隆链接到指定路径。
+在本地的`terminal`或者`git bash`上执行以下命令
 
 ```python
-#操作：git clone 链接
-git clone https:// "https://source-xihe.test.osinfra.cn/Mindspore/project-mnist-test.git。"
-```
-
-![WechatIMG495](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG630.png)
-
-您可以选择直接在终端上对文件修改，或到对应的路径下对文件修改。
-
-操作：
-
-```python
-git commit -m "自定义命名"
+# 1. 克隆仓库
+git clone https://xxx/xxx.git
+# 2. 进入到克隆后的仓库文件夹下，将代码复制到此文件夹下，注意不要放大文件（200KB）,否则会push失败。也不能上传lfs文件（即不可以git lfs track <大文件>）,否则会训练调度失败
+# 3. 将所有更改的文件放在暂存区
+git add .
+# 4. 将暂存区的文件上传到本地仓库
+git commit -m "xxx"
+# 5. 将本地仓库push到云端仓库，push成功之后建议在云端仓库检查文件是否上传成功
 git push
 ```
 
+**注**：第一次push需登录，用户名为平台用户名，密码为个人中心的token![WechatIMG495](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG630.png)
+
 ![WechatIMG494](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG625.jpeg)
 
-#### Git lfs操作大文件
+#### Git克隆他人仓库
+
+您可以点击导航栏项目按钮->点击您需要用户项目卡片->进入其用户项目页面。
+
+![image-20221106100158854](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG633.png)
+
+接下来的步骤同上面Git克隆操作，Git当前链接到指定路径；如果您不想使用Git操作，可以直接Fork到你的项目里面。
+
+```python
+#操作：到指定路径git clone 链接，打开路径就可以看到克隆的文件啦
+git clone https:// "https://source-xihe.test.osinfra.cn/Mindspore/project-mnist-test.git"
+```
+
+![image-20221106100817475](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG634.png)
+
+#### Git_lfs操作大文件
 
 您可以使用git lfs：在操作前请注意是否有[git lfs](https://www.jianshu.com/p/493b81544f80)工具。
 
@@ -152,89 +162,9 @@ git push
 
 ![WechatIMG494](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG625.jpeg)
 
-成功后上传的文件右侧会出现LFS的字样
+成功后上传的文件右侧会出现LFS的字样，这样git lfs大文件操作就成功啦。
 
 ![image-20221106100158854](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/7311668668381_.pic.jpg)
-
-#### Git克隆他人项目
-
-您可以点击导航栏项目按钮->点击该用户项目卡片->进入该用户项目页面。
-
-![image-20221106100158854](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG633.png)
-
-接下来的步骤同上面Git克隆当前链接到指定路径修改或者直接Fork到你的项目里面。
-
-![image-20221106100817475](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG634.png)
-
-## 模型仓的Git操作
-
-#### Git克隆个人模型
-
-点击个人主页->模型，进入模型界面->文件->点击克隆。
-
-点击模型按钮，进入个人的模型卡片。
-
-![image-20221108142827031](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG635.png)
-
-点击文件可以对模型进行Git克隆。
-
-![image-20221108142827031](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG636.png)
-
-点击克隆按钮可以对模型进行Git克隆的操作。
-
-![image-20221108142827031](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG637.png)
-
-#### Git克隆他人模型
-
-您可以点击该用户模型卡片
-
-![image-20221108142827031](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG638.png)
-
-Git克隆链接如下，其他操作与项目仓Git操作类似。
-
-```python
-git clone https://source-xihe.test.osinfra.cn/wesley/lenet_mnist.git
-```
-
-![WechatIMG495](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG637.png)
-
-## 数据集的Git操作
-
-#### Git克隆个人数据集
-
-点击个人主页->数据集->进入数据集界面->文件->点击克隆。
-
-点击数据集按钮，进入自己的数据集卡片。
-
-`注`：只有个人代码仓可以push，他人代码仓只能克隆
-
-![image-20221108142827031](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG639.png)
-
-点击文件可以对数据集进行Git克隆。
-
-`注`：只有个人代码仓可以push，他人代码仓只能克隆
-
-![image-20221108142827031](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG640.png)
-
-点击克隆按钮可以对数据集进行Git克隆的操作。
-
-`注`：只有个人代码仓可以push，他人代码仓只能克隆
-
-![image-20221108142827031](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG641.png)
-
-#### Git克隆他人数据集
-
-您可以导航栏模型按钮->选择用户数据集卡片->进入数据集。
-
-`注`：只有个人代码仓可以push，他人代码仓只能克隆
-
-![image-20221108142827031](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG638.png)
-
-Git克隆链接，其余操作与项目Git操作类似。
-
-`注`：只有个人代码仓可以push，他人代码仓只能克隆
-
-![WechatIMG495](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG642.png)
 
 
 

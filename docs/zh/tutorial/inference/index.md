@@ -4,7 +4,7 @@
 
 ### 如何在平台上在线推理？
 
-#### **1.推理代码**
+#### 1.推理代码
 
 我们以官方的<a href="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet5_demo</a>为例，原推理代码参考[MindSpore初学入门——手写数字识别](https://www.mindspore.cn/tutorials/zh-CN/r1.7/beginner/quick_start.html)
 
@@ -125,18 +125,11 @@ Gradio快速入门请参考[Gradio快速入门](https://www.gradio.app/getting_s
 ```python
 mindspore==1.8.1
 mindvision==0.1.0
-gradio==2.7.5.2
-numpy==1.21.6
-opencv-contrib-python
-opencv-contrib-python-headless
-opencv-python
-opencv-python-headless
-jinja2==3.1.2
 ```
 
 
 
-#### **4.创建项目仓库，将推理代码上传到平台上**
+#### 4.创建项目仓库，将推理代码上传到平台上
 
 本地项目推理代码目录结构（`requirements.txt`、配置文件`config.json`和启动文件`app.py`必须在同一级）
 
@@ -257,6 +250,8 @@ jinja2==3.1.2
 
 
 
+
+
 ### 平台推理镜像内置的依赖有哪些?
 
 ```shell
@@ -273,6 +268,8 @@ matplotlib
 mindvision
 esdk-obs-python==3.21.4
 ```
+
+
 
 
 
