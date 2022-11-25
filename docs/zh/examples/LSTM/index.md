@@ -161,7 +161,7 @@
 
    综合查看多个metics的变化趋势可以点击metrics，然后添加想查看的metrics后点击Search：
 
-   <img src=" https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/resnet50/aim_metrics.png" width="70%">
+   <img src="https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/resnet50/aim_metrics.png" width="70%">
    
 
 
