@@ -2,7 +2,7 @@
 
 👉5分钟快速体验AI全流程开发
 
-在此教程中，我们将通过Fork项目MindSpore/LSTM-imdb，快速体验AI全流程开发——训练、推理和评估。
+在此教程中，我们将通过Fork项目MindSpore/LSTM，快速体验AI全流程开发——训练、推理和评估。
 
 # 目录  
 [基本介绍](#基本介绍)  
@@ -52,9 +52,9 @@
 
 <a name="项目地址"></a>
 ### 项目地址
-- 项目仓库： [MindSpore/LSTM-imdb](https://xihe.mindspore.cn/projects/MindSpore/LSTM)
+- 项目仓库： [MindSpore/LSTM](https://xihe.mindspore.cn/projects/MindSpore/LSTM)
 - 模型仓库： [MindSpore/LSTM_model](https://xihe.mindspore.cn/models/MindSpore/LSTM_model)
-- 数据集仓库： [drizzlezyk/imdb_dataset](https://xihe.mindspore.cn/datasets/MindSpore/imdb)
+- 数据集仓库： [drizzlezyk/imdb_dataset](https://xihe.mindspore.cn/datasets/drizzlezyk/imdb_dataset)
 
 <a name="项目结构"></a>
 ### 项目结构
