@@ -37,19 +37,19 @@ export default {
       text: "教程篇",
       children: [
         {
-          text: "训练常见问题",
+          text: "平台训练教程",
           link: "/zh/tutorial/train/",
         },
         {
-          text: "推理常见问题",
+          text: "平台推理教程",
           link: "/zh/tutorial/inference/",
         },
         {
-          text: "评估常见问题",
+          text: "平台评估教程",
           link: "/zh/tutorial/evaluation/",
         },
         {
-          text: "仓库常见问题",
+          text: "平台仓库文件操作教程",
           link: "/zh/tutorial/repo/",
         },
       ],
@@ -81,6 +81,10 @@ export default {
         {
           text: "反馈方式",
           link: "/zh/appendix/feedback/",
+        },
+        {
+          text: "新版本更新",
+          link: "/zh/appendix/release/",
         },
         {
           text: "用户协议",
