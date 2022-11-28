@@ -9,6 +9,10 @@ export default {
       link: "/zh/quick_start/",
     },
     {
+      text: "新版本更新说明",
+      link: "/zh/release/",
+    },
+    {
       text: "操作篇",
       children: [
         {
@@ -81,10 +85,6 @@ export default {
         {
           text: "反馈方式",
           link: "/zh/appendix/feedback/",
-        },
-        {
-          text: "新版本更新",
-          link: "/zh/appendix/release/",
         },
         {
           text: "用户协议",
