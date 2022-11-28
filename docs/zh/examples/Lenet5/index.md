@@ -214,9 +214,13 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 - 评估方式1——训练日志可视化
 
-  以启动文件train.py为例：![create-train-aim](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/quickstart_train_aim.png)
+  以启动文件`train.py`为例：
 
-  以启动文件`train_gridsearch.py`为例（输入的顺序跟grid search输入的顺序范围一致）：![create-traingrid-aim](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/quick_start_gridtrain_aim.png)
+  ![create-train-aim](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/quickstart_train_aim.png)
+
+  以启动文件`train_gridsearch.py`为例（输入的顺序跟grid search输入的顺序范围一致）：
+
+  ![create-traingrid-aim](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/quick_start_gridtrain_aim.png)
 
 - 评估方式2——自定义评估
 
