@@ -347,8 +347,7 @@ opencv-python-headless==4.5.5.64
 | 训练框架  | device  | version                                               | 计算资源                                            |
 | --------- | ------- | ----------------------------------------------------- | --------------------------------------------------- |
 | MindSpore | GPU/CPU | mindspore_1.3.0-cuda_10.1-py_3.7-ubuntu_1804-x86_64   | GPU：1*NVIDIA-V100（32GB）\|CPU：8核 64GB 3200 GB   |
-| MindSpore | Ascend  | mindspore_1.3.0-cann_5.0.2-py_3.7-euler_2.8.3-aarch64 | Ascend: 1*Ascend 910(32GB) \| ARM：24核 96GB 3200GB |
-| MindSpore | Ascend  | mindspore_1.5.1-cann_5.0.3-py_3.7-euler_2.8.3-aarch64 | Ascend: 1*Ascend 910(32GB) \| ARM：24核 96GB 3200GB |
+| MindSpore | Ascend  | mindspore_1.7.0-cann_5.1.0-py_3.7-euler_2.8.3-aarch64 | Ascend: 1*Ascend 910(32GB) \| ARM：24核 96GB 3200GB |
 
 若要使用其他版本，需要重新安装新版本在基础镜像上做覆盖。注意系统、驱动、硬件版本是不能更改的，只能覆盖MindSpore的版本。
 
