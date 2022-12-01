@@ -74,7 +74,7 @@ git config --global user.password "123456(新的密码)"
 
 ```python
 #克隆的链接
-https://source-xihe.test.osinfra.cn/Mindspore/project-mnist-test.git
+git clone https://source-xihe.mindspore.cn/Mindspore/project-mnist-test.git
 ```
 
 ![image-20221108155837102](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/6461668151043_.pic.jpg)
@@ -83,7 +83,7 @@ https://source-xihe.test.osinfra.cn/Mindspore/project-mnist-test.git
 
 ```python
 # 1. 克隆仓库
-git clone https://xxx/xxx.git
+git clone https://source-xihe.mindspore.cn/<user>/<repo>.git
 # 2. 进入到克隆后的仓库文件夹下，将代码复制到此文件夹下，注意不要放大文件（200KB）,否则会push失败。也不能上传lfs文件（即不可以git lfs track <大文件>）,否则会训练调度失败
 # 3. 将所有更改的文件放在暂存区
 git add .
@@ -107,7 +107,7 @@ git push
 
 ```python
 #操作：到指定路径git clone 链接，打开路径就可以看到克隆的文件啦
-git clone https:// "https://source-xihe.test.osinfra.cn/Mindspore/project-mnist-test.git"
+git clone https://source-xihe.mindspore.cn/Mindspore/project-mnist-test.git"
 ```
 
 ![image-20221106100817475](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG634.png)
@@ -120,7 +120,7 @@ git clone https:// "https://source-xihe.test.osinfra.cn/Mindspore/project-mnist-
 
   ```python
   # 安装git lfs，只要安装一次就行
-  git lfs intall
+  git lfs install
   # track大文件，注意后面为正则，比如将.ckpt的文件标为大文件
   git lfs track "*.ckpt"
   # 查看.gitattribute文件是否生成

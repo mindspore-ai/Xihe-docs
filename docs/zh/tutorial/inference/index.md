@@ -161,7 +161,7 @@ mindvision==0.1.0
 
   ```shell
   # 1. 克隆仓库
-  git clone https://xxx/xxx.git
+  git clone https://source-xihe.mindspore.cn/<user>/<repo>.git
   # 2. 进入到克隆后的仓库文件夹下，将代码复制到此文件夹下，注意不要放大文件（200KB）,否则会push失败。也不能上传lfs文件（即不可以git lfs track <大文件>）,否则会训练调度失败
   # 3. 将所有更改的文件放在暂存区
   git add .
@@ -202,11 +202,11 @@ mindvision==0.1.0
 
   ```shell
   # 1. 克隆仓库
-  git clone https://xxx/xxx.git
+  git clone https://source-xihe.mindspore.cn/<user>/<repo>.git
   # 2. 进入到克隆后的仓库文件夹下，并将权重文件复制到此文件夹下
   # 3. 标记大文件（超过200K）
   # # 安装git lfs，只要安装一次就行
-  git lfs intall
+  git lfs install
   # # track大文件，注意后面为正则，比如下例中将.ckpt的文件标为大文件
   git lfs track "*.ckpt"
   # # 查看.gitattribute文件是否生成
@@ -237,18 +237,16 @@ mindvision==0.1.0
 
 
 
-> 注：如果推理不成功，可通过以下步骤核查代码。
->
-> 如果出现错误，可以通过以下几个步骤检查
->
-> 1. 权重文件只能通过`config.json`方式引用
-> 2. 核心启动文件名必须为`app.py`，依赖文件必须为`requirements.txt`，引用配置文件必须为`config.json`
-> 3. 建议最好本地调通再上传代码
-> 4. 本地调试代码穿上平台上还是报错，可`F12`查看具体报错信息，平台也有错误日志打印，但会有一定延时性，不能及时返回。所以最好通过`F12`查看网络查看具体错误信息。
-> 5. 若以上情况都满足还是无法启动成功，请参考[问题反馈](#feedback)
->
+### 推理启动失败或者报`ERROR`该怎么办？
 
+如果出现启动失败或者报`ERROR`的错误，可以通过以下几个步骤检查
 
+1. 可考虑推理代码有`BUG`。如果是启动失败，请检查主程序；如果是点击推理按钮报`ERROR`往往是因为回调函数（也就是推理函数）报错，请检查推理函数相关代码。
+2. 建议在本地调试成功再上传到平台。平台的推理日志显示我们也会持续优化。
+3. 若本地调试可以执行成功，但是云端还是启动失败或者报`ERROR`，可逐一检查
+   - 核心启动文件名必须为`app.py`，依赖文件必须为`requirements.txt`，引用配置文件必须为`config.json`
+   - 权重文件只能通过`config.json`方式引用，`key`值为`model_path`，值为一个模型权重文件路径列表，路径格式为`<user>/<repo>/<file_path>`
+4. 若按照平台要求还是报`ERROR`请及时反馈。详见[问题反馈](#feedback)。
 
 
 
