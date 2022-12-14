@@ -35,6 +35,8 @@
 
 点击数据集卡片，进入数据集卡片界面->点击Dataset或者数据集链接->下载数据集。
 
+注意：需要下载使用的数据集需要遵循Licence规则；“数据集是否允许商用”、“模型是否允许商用”、“产品集成是否允许商用”的规则。
+
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E6%95%B0%E6%8D%AE%E9%9B%86/WechatIMG558.png)
 
 ## 上传数据集
