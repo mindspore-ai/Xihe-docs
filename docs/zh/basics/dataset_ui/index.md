@@ -2,7 +2,7 @@
 
 # 数据集
 
-更新时间：2022-11-15
+更新时间：2022-12-12
 
 **目录**
 
@@ -34,8 +34,6 @@
 ## 下载数据集
 
 点击数据集卡片，进入数据集卡片界面->点击Dataset或者数据集链接->下载数据集。
-
-注意：需要上线的数据集需显示“数据集是否允许商用”、“模型是否允许商用”、“产品集成是否允许商用”，每个图标鼠标悬浮时需显示中英文提示，具体可参考[模版](https://xihe.mindspore.cn/datasets/MindSpore/COCO2014)markdown文件格式。
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E6%95%B0%E6%8D%AE%E9%9B%86/WechatIMG558.png)
 
