@@ -287,8 +287,8 @@ aim==3.8.1
   git lfs install
   # # track大文件，注意后面为正则，比如下例中将.ckpt的文件标为大文件
   git lfs track "*.ckpt"
-  # # 查看.gitattribute文件是否生成
-  cat .gitattribute
+  # # 查看.gitattributes文件是否生成
+  cat .gitattributes
   # 4. 将所有更改的文件放在暂存区
   git add .
   # 5. 将暂存区的文件上传到本地仓库
@@ -344,8 +344,8 @@ aim==3.8.1
   git lfs track "datasets/**"
   # # 忽略文件夹中的文件(不包含文件夹)
   git lfs track "datasets/*"
-  # # 查看.gitattribute文件是否生成
-  cat .gitattribute
+  # # 查看.gitattributes文件是否生成
+  cat .gitattributes
   
   # 4. 将所有更改的文件放在暂存区
   git add .

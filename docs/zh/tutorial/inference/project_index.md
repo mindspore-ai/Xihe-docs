@@ -9,7 +9,7 @@
 	├─app.py            # 核心启动文件
 	├─config.json       # 配置文件
 	...
-	└─requirments.txt	# 依赖文件
+	└─requirements.txt	# 依赖文件
 ```
 
 注：你需要将gradio相关的代码放在`inference`文件夹下面，后台会将`inference`下面的文件拉取到服务器中，注意需将引用的权重文件放在`config.json`中，且项目仓库不能上传lfs文件。
@@ -36,7 +36,7 @@
 
   你也可以将`app.py`依赖的文件放在同级，就和python的模块一样
 
-- `requirments.txt`（必须）
+- `requirements.txt`（必须）
 
   环境依赖列表
 
