@@ -2,7 +2,7 @@
 
 # &#x1F449;5分钟快速体验AI全流程开发
 
-在此教程中，我们将通过fork样例仓 <a href ="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet5_demo</a>，快速体验在昇思大模型平台实现AI全流程开发——训练、推理和评估。
+在此教程中，我们将通过fork样例仓 <a href ="https://xihe.mindspore.cn/projects/MindSpore/lenet5">MindSpore/lenet5</a>，快速体验在昇思大模型平台实现AI全流程开发——训练、推理和评估。
 
 ## 基本介绍
 
@@ -20,13 +20,13 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ### 任务简介
 
-基于公开的模型仓库 <a href ="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet_mnist</a> 下的MindSpore预训练文件 `lenet-1_1875.ckpt` 和公开的数据集 <a href="https://xihe.mindspore.cn/datasets/wesley/mnist">wesley/mnist</a> 实现迁移学习，在昇思大模型平台体验训练、评估和推理可视化全流程AI开发体验。
+基于公开的模型仓库 <a href ="https://xihe.mindspore.cn/projects/MindSpore/lenet5">MindSpore/lenet_mnist</a> 下的MindSpore预训练文件 `lenet-1_1875.ckpt` 和公开的数据集 <a href="https://xihe.mindspore.cn/datasets/wesley/mnist">wesley/mnist</a> 实现迁移学习，在昇思大模型平台体验训练、评估和推理可视化全流程AI开发体验。
 
 **项目地址**
 
 - 预训练模型：<a href="https://xihe.mindspore.cn/models/MindSpore/lenet_mnist">MindSpore/lenet_mnist</a>
 - 数据集：<a href="https://xihe.mindspore.cn/datasets/wesley/mnist">wesley/mnist</a>
-- 项目：<a href="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet5_demo</a>
+- 项目：<a href="https://xihe.mindspore.cn/projects/MindSpore/lenet5">MindSpore/lenet5</a>
 
 <a id="dir">**目录结构**</a>
 
@@ -78,7 +78,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ### Fork 样例仓
 
-1.在项目搜索页中，搜索样例仓 <a href ="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet5_demo</a>，或直接点击链接。
+1.在项目搜索页中，搜索样例仓 <a href ="https://xihe.mindspore.cn/projects/MindSpore/lenet5">MindSpore/lenet5</a>，或直接点击链接。
 
 ![项目搜索](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/projects/quick_start/lenet/quickstart_search.png)
 
@@ -88,7 +88,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 ### 训练与评估
 
-1.选择不同的评估方式，您需要适配的更改训练文件（训练代码在[train/trainDir](https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo/tree/train/trainDir)下）。
+1.选择不同的评估方式，您需要适配的更改训练文件（训练代码在[train/trainDir](https://xihe.mindspore.cn/projects/MindSpore/lenet5/tree/train/trainDir)下）。
 
 - 评估方式1——训练日志可视化
 
@@ -102,7 +102,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
   ...
   ```
 
-  注意目前仅支持[`LossMonitor`](https://www.mindspore.cn/vision/docs/zh-CN/r0.1/engine.html?highlight=lossmonitor#mindvision.engine.callback.LossMonitor)和[`ValAccMonitor`](https://www.mindspore.cn/vision/docs/zh-CN/r0.1/engine.html?highlight=valaccmonitor#mindvision.engine.callback.ValAccMonitor)，为了增加不同参数下的对比效果，你也可以使用`grid search` + `Monitor`，具体代码可参考[`train_gridsearch.py`](https://xihe.mindspore.cn/projects/wesley/lenet5_demo/blob/train/trainDir/train_gridsearch.py)
+  注意目前仅支持[`LossMonitor`](https://www.mindspore.cn/vision/docs/zh-CN/r0.1/engine.html?highlight=lossmonitor#mindvision.engine.callback.LossMonitor)和[`ValAccMonitor`](https://www.mindspore.cn/vision/docs/zh-CN/r0.1/engine.html?highlight=valaccmonitor#mindvision.engine.callback.ValAccMonitor)，为了增加不同参数下的对比效果，你也可以使用`grid search` + `Monitor`，具体代码可参考[`train_gridsearch.py`](https://xihe.mindspore.cn/projects/wesley/lenet5/blob/train/trainDir/train_gridsearch.py)
 
   ```python
   # train_gridsearch.py，支持标准评估
@@ -127,7 +127,7 @@ LeNet非常简单，包含5层，由2个卷积层和3个全连接层组成。
 
 - 评估方式2——自定义评估
 
-  评估方式1的评估指标有限，你也可以自己写评估代码，跟踪你想要关注的指标。比如下例[`train_customize_aim.py`](https://xihe.mindspore.cn/projects/wesley/lenet5_demo/blob/train/trainDir/train_customize_aim.py)中以[自定义Callback](https://www.mindspore.cn/tutorials/zh-CN/r1.9/advanced/model/callback.html?highlight=%E8%87%AA%E5%AE%9A)+[Aim 跟踪指标](https://aimstack.readthedocs.io/en/latest/quick_start/supported_types.html#tracking-multiple-values) 的方式跟踪每个epoch之后训练集和测试集的acc。
+  评估方式1的评估指标有限，你也可以自己写评估代码，跟踪你想要关注的指标。比如下例[`train_customize_aim.py`](https://xihe.mindspore.cn/projects/wesley/lenet5/blob/train/trainDir/train_customize_aim.py)中以[自定义Callback](https://www.mindspore.cn/tutorials/zh-CN/r1.9/advanced/model/callback.html?highlight=%E8%87%AA%E5%AE%9A)+[Aim 跟踪指标](https://aimstack.readthedocs.io/en/latest/quick_start/supported_types.html#tracking-multiple-values) 的方式跟踪每个epoch之后训练集和测试集的acc。
 
   ```python
   # train_customize_aim.py
