@@ -119,9 +119,3 @@
 `昇思大模型平台`为使用者预置华为AI [Mindspore深度学习开发框架](https://mindspore.cn/install)点击即可配置开发环境。
 
 `昇思大模型平台`：让AI学习更简单！
-
-
-
-https://xihe.mindspore.cn/projects/MindSpore/CycleGAN/
-
-https://inference-64254713fe8f75c65a6f9f19.pool1.mindspore.cn/
