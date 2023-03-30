@@ -4,7 +4,7 @@
 
 ## 1. 使用须知
 
-> - 因一些原因，`jupyter`运行实例固定只能运行2个小时。**2个小时之后将会自动释放所有资源，请提前将所需资源下载到本地或git push到平台中**。
+> - 目前`jupyter`运行实例限制只能运行2个小时。**2个小时之后将会自动释放所有资源，请提前将所需资源下载到本地或git push到平台中**。
 > - 本平台是开放的学习平台，禁止使用本平台进行商业用途和非法用途，一旦发现将依法追究。
 
 此开发环境是使用的是`Jupyter Lab 3.x`，并集成了丰富的实用插件。您可以在`Jupyter Lab`上灵活运行调试代码和编写文档，`Jupyter Lab`集成了很多编辑器，例如 `Jupyter` 笔记本、文本编辑器、终端和自定义组件。更多的详细介绍你可以查看 [JupyterLab官网文档介绍](https://jupyterlab.readthedocs.io/en/stable/getting_started/overview.html#overview)。
