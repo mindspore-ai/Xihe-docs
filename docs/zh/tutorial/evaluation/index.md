@@ -8,7 +8,7 @@
 
 #### **1.适配的更改训练代码**
 
-我们以官方的<a href="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet5_demo</a>为例，原训练代码参考[MindSpore初学入门——手写数字识别](https://www.mindspore.cn/tutorials/zh-CN/r1.7/beginner/quick_start.html)，在本例中我们以[MindSpore 自定义Callback](https://www.mindspore.cn/tutorials/zh-CN/r1.9/advanced/model/callback.html?highlight=%E8%87%AA%E5%AE%9A)+[Aim 跟踪指标](https://aimstack.readthedocs.io/en/latest/quick_start/supported_types.html#tracking-multiple-values) 的方式跟踪了每个epoch之后训练集和测试集的acc。
+我们以官方的<a href="https://xihe.mindspore.cn/projects/MindSpore/lenet5">MindSpore/lenet5</a>为例，原训练代码参考[MindSpore初学入门——手写数字识别](https://www.mindspore.cn/tutorials/zh-CN/r1.7/beginner/quick_start.html)，在本例中我们以[MindSpore 自定义Callback](https://www.mindspore.cn/tutorials/zh-CN/r1.9/advanced/model/callback.html?highlight=%E8%87%AA%E5%AE%9A)+[Aim 跟踪指标](https://aimstack.readthedocs.io/en/latest/quick_start/supported_types.html#tracking-multiple-values) 的方式跟踪了每个epoch之后训练集和测试集的acc。
 
 原训练代码
 

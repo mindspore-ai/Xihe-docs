@@ -10,7 +10,7 @@
 
 因此，训练代码需要做一些适配，即在训练代码中增加一个解析参数，用于预训练模型的文件位置、数据集的文件夹位置的输入，和权重文件或者输出图片等的输出。
 
-我们以官方的<a href="https://xihe.mindspore.cn/projects/MindSpore/lenet5_demo">MindSpore/lenet5_demo</a>为例，原训练代码参考[MindSpore初学入门——手写数字识别](https://www.mindspore.cn/tutorials/zh-CN/r1.7/beginner/quick_start.html)
+我们以官方的<a href="https://xihe.mindspore.cn/projects/MindSpore/lenet5">MindSpore/lenet5</a>为例，原训练代码参考[MindSpore初学入门——手写数字识别](https://www.mindspore.cn/tutorials/zh-CN/r1.7/beginner/quick_start.html)
 
 **原训练代码**
 
