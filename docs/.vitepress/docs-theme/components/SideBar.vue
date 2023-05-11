@@ -1,5 +1,4 @@
-<script lang="ts" setup>
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <aside class="sidebar">
@@ -10,10 +9,10 @@
 <style lang="scss" scoped>
 .sidebar {
   position: fixed;
-  top: 120px;
+  top: 80px;
   left: 0;
   width: 300px;
-  height: 100vh ;
+  height: calc(100vh - 80px);
   margin-bottom: 16px;
   padding: 0 0 30px 40px;
   background-color: #ffffff;
@@ -21,6 +20,23 @@
   font-size: 14px;
   font-weight: normal;
   color: #000000;
+  overflow-y: auto;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #d8d8d8;
+    background-clip: content-box;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 3px;
+    box-shadow: inset 0 0 2px rgba($color: #000000, $alpha: 0.2);
+    background: #ffffff;
+  }
   &-title + .sidebar-title {
     margin-top: 28px;
   }

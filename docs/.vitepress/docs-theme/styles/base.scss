@@ -14,6 +14,22 @@ body {
   scroll-behavior: smooth;
   font-family: 'Helvetica', 'Arial', 'PingFang SC', 'Microsoft YaHei',
     sans-serif;
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #d8d8d8;
+    background-clip: content-box;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 3px;
+    box-shadow: inset 0 0 2px rgba($color: #000000, $alpha: 0.2);
+    background: #ffffff;
+  }
 }
 
 *,
