@@ -9,13 +9,17 @@ import qrCodeImg from '@/assets/qr-code.png';
     </div>
     <div class="footer-content">
       <div class="above">
-        <a target="_blank" href="https://xihe.mindspore.cn/privacy" class="text">隐私政策</a>
+        <a target="_blank" href="https://xihe.mindspore.cn/privacy" class="text"
+          >隐私政策</a
+        >
         <div class="division"></div>
-        <a target="_blank" href="https://xihe.mindspore.cn/legal" class="text">法律声明</a>
+        <a target="_blank" href="https://xihe.mindspore.cn/legal" class="text"
+          >法律声明</a
+        >
       </div>
       <div class="below">
         <span>版权所有</span>
-        <span>©&nbsp;2022&nbsp;MindSpore</span>
+        <span>©&nbsp;2023&nbsp;MindSpore</span>
         <span>&nbsp;保留一切权利</span>
       </div>
     </div>
@@ -37,9 +41,9 @@ import qrCodeImg from '@/assets/qr-code.png';
   height: 200px;
   padding: 16px 16px;
   color: rgba(255, 255, 255, 1);
-   @media screen and (max-width:1625px) {
-      padding: 16px 60px;
-    }
+  @media screen and (max-width: 1625px) {
+    padding: 16px 60px;
+  }
 
   &-logo {
     display: flex;
