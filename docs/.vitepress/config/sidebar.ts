@@ -91,8 +91,12 @@ export default {
           link: "/zh/appendix/feedback/",
         },
         {
+          text: "平台协议",
+          link: "/zh/appendix/platlicense/",
+        },
+        {
           text: "用户协议",
-          link: "/zh/appendix/license/",
+          link: "/zh/appendix/userlicense/",
         },
       ],
     },
