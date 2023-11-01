@@ -60,13 +60,6 @@
 
 ![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E9%A1%B9%E7%9B%AE/WechatIMG572.png)
 
-点击启动就可以开始体验
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E9%A1%B9%E7%9B%AE/WechatIMG573.png)
-
-点击Submit就可以查看推理的结果了
-
-![11112c01f50bb94f381f7dbab2c9d.png](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E9%A1%B9%E7%9B%AE/WechatIMG574.png)
 
 ## 对项目添加标签
 
