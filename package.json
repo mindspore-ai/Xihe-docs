@@ -11,13 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pinia": "^2.0.13"
+    "pinia": "2.0.33"
   },
   "devDependencies": {
-    "directory-tree": "^2.2.7",
-    "esbuild-register": "^3.3.3",
-    "sass": "^1.51.0",
-    "vitepress": "1.0.0-alpha.4",
-    "vue": "^3.2.37"
+    "sass": "1.62.0",
+    "vitepress": "0.22.4",
+    "vue": "3.2.47"
   }
 }
