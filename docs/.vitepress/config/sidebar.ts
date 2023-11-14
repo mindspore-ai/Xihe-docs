@@ -13,10 +13,6 @@ export default {
       link: "/zh/release/",
     },
     {
-      text: "Jupyter操作文档",
-      link: "/zh/cloud/",
-    },
-    {
       text: "操作篇",
       children: [
         {
