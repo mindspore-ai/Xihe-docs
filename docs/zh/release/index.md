@@ -62,7 +62,7 @@
 
 ### 问题反馈
 
-您可以添加官方助手小猫子（**微信号：mindspore0328**）进行咨询，您也可以联系我们的邮箱`contact@mindspore.cn`，我们会及时回复。
+您可以添加官方助手小猫子（**微信号：mindspore0328**）进行咨询，您也可以联系我们的邮箱`contact@public.mindspore.cn`，我们会及时回复。
 
 
 
