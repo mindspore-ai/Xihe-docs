@@ -45,14 +45,6 @@ export default {
           link: "/zh/tutorial/train/",
         },
         {
-          text: "平台推理教程",
-          link: "/zh/tutorial/inference/",
-        },
-        {
-          text: "平台评估教程",
-          link: "/zh/tutorial/evaluation/",
-        },
-        {
           text: "平台仓库文件操作教程",
           link: "/zh/tutorial/repo/",
         },
