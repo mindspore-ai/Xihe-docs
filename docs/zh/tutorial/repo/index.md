@@ -32,8 +32,9 @@ git config --global user.password "123456(新的密码)密码为Token密码"
 #### Token密码的获取
 
 个人设置下的账户安全按钮找到TOKEN密码：
+(首次注册的用户第一次要主动刷新TOKEN，每次刷新后请需要自行保存好TOKEN，后续不可见，如忘记需要重新刷新)
 
-![WechatIMG494](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/%E6%96%B0_%E4%B8%8B%E8%BD%BD%E3%80%81%E5%85%8B%E9%9A%86/WechatIMG693.png)
+![WechatIMG494](https://obs-xihe-beijing4.obs.cn-north-4.myhuaweicloud.com/xihe-img/repo-tutorial/token-get.jpg)
 
 #### 查看当前用户名和邮箱
 
